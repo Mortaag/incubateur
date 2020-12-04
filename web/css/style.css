@@ -22,7 +22,10 @@ h2 {
     padding: 6px ;
     text-align: center;
 }
-.header{ background-color: darkcyan; color: #FFFFFF; }
+.header{ 
+    background-color: white; 
+    color: #FFFFFF; 
+}
 #content {
     padding: 4px 0 24px 0;
 }
@@ -36,4 +39,13 @@ h2 {
 }
 #footer a {
     color: #999999;
+}
+
+.logo {
+    width: 30%;
+    height: 30%;
+    justify-content: center;
+    margin-bottom: -5%;
+    margin-top: -14%;
+    margin-left: -1%;
 }
