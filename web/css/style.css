@@ -94,10 +94,10 @@ li a:hover {
 }
 ul {
     list-style-type: none;
-    margin: 0;
+    margin: -10;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(255, 254, 254);
+    background-color: lightblue rgb(255, 254, 254);
 }
 
 li {
@@ -108,7 +108,7 @@ li a {
     display: block;
     color: rgb(5, 5, 5);
     text-align: center;
-    padding: 5px 137px;
+    padding: 5px 123px;
     text-decoration: none;
 }
 
