@@ -71,7 +71,6 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: lightblue rgb(255, 254, 254);
-    position: fixed;
     top: 0;
     width: 100%;
 }
@@ -79,6 +78,7 @@ ul {
 li {
     float: left;
     border-right: 1px solid rgb(250, 248, 248);
+    width: 19%;
 }
 
 li a {
