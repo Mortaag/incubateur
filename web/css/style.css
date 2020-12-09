@@ -99,3 +99,7 @@ li a {
 li:last-child {
     border-right: none;
 }
+
+.select {
+    background-color: gold;
+}
