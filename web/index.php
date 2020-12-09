@@ -41,6 +41,8 @@ $_SESSION['age'] = '24' ;
         }
         ?>
     </p>
+
+
     <h1>
         <div id="page">
             <div id="header" class="header">
