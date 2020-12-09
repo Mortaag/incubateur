@@ -2,24 +2,14 @@
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
-
-
-<img src="../images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.html">
 <ul>
-  
     <li><a href="../index.html">Page d'Accueil</a></li>
-    <li><a href="../visu/organisation.html">Les évènements</a></li>
+    <li class="select"><a href="../visu/organisation.html">Les évènements</a></li>
     <li><a href="../visu/connexion.html">Inscription/ Connection</a></a></li>
-    <li class="select"><a href="../visu/paiement.html">Le Paiement</a></li>
+    <li><a href="../visu/paiement.html">Le Paiement</a></li>
     <li><a href="../visu/qrcode.html">Qr code page</a></li>
+    
+    
   </ul>
-
-  <h1>
-    <div id="page">
-        <div id="header" class="header">
-    <a href="paiement.html">
-        <img src="../images/image_paiement_sans_contact.png" alt="image de paiement" class="paiement" href="paiement.html">
-    </a>
-
 </body>
 </html>
