@@ -14,12 +14,12 @@ h2 {
 
 #page{
     background-color: #FFFFFF;
-    width: 60%;
+    width: 100%;
     margin: 24px auto;
     padding: 12px;
 }
 #header{
-    padding: 6px ;
+    padding: 20px ;
     text-align: center;
 }
 .header{ 
@@ -45,7 +45,7 @@ h2 {
     
     height: 120px;
     margin : auto ;
-    margin-left: 680px;
+    margin-left: 570px;
     margin-bottom: 15px;
 }
 
