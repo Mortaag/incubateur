@@ -1,10 +1,14 @@
 <?php
 
+
+
 session_start();
 
-$_SESSION = ['utilisateur'] = 'user';
-$_SESSION = ['mot_de_passe'] = 'mdp';
-$_SESSION = ['age'] = '24' ;
+$_SESSION['user'] = 'user';
+$_SESSION['mot_de_passe'] = 'mdp';
+$_SESSION['age'] = '24' ;
+
+
 
 ?>
 
@@ -19,22 +23,32 @@ $_SESSION = ['age'] = '24' ;
     <meta name="robots" content="noindex" />
 </head>
 <body>
+    <img src="images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.html">
+        <ul>
+            <li class="select"><a href="index.html">Page d'Accueil</a></li>
+            <li><a href="visu/organisation.html">Les évènements</a></li>
+            <li><a href="visu/connexion.html">Inscription/ Connection</a></a></li>
+            <li><a href="visu/paiement.html">Le Paiement</a></li>
+            <li><a href="visu/qrcode.html">Qr code page</a></li>
+        </ul>
+        <p>
+        <?php 
+        
+        if ($_SESSION['user'] === 'user' && $_SESSION['mot_de_passe'] === 'mdp') {
+            echo "Bonsoir " . $_SESSION['user'] . "! Bienvenue sur Thetickets.fr !";
+        } else {
+            echo "Bonsoir ! Veuillez vous connectez pour accéder a votre compte utilisateur.";
+        }
+        ?>
+    </p>
 
-    <ul>
-        <li class="select"><a href="index.html">Page d'Accueil</a></li>
-        <li><a href="visu/organisation.html">Les évènements</a></li>
-        <li><a href="visu/connexion.html">Inscription/ Connection</a></a></li>
-        <li><a href="visu/paiement.html">Le Paiement</a></li>
-        <li><a href="visu/qrcode.html">Qr code page</a></li>
-    </ul>
 
-    <div id="page">
-        <div id="header" class="header">
-            <h1>
-                <a href="index.html">
-                    <img src="images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.html">
-                </a>
-            </h1>
+    <h1>
+        <div id="page">
+            <div id="header" class="header">
+        <a href="index.html">
+            <img src="images/image_concert.webp" alt="image de concert" class="concert" href="index.html">
+        </a>
         </div>
     </div>
 </body>
