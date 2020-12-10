@@ -5,23 +5,29 @@
 
 <img src="../images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.html">
 <ul>
-  
-    <li><a href="../index.html">Page d'Accueil</a></li>
-    <li class="select"><a href="../visu/organisation.html">Les évènements</a></li>
-    <li><a href="../visu/connexion.html">Inscription/ Connection</a></a></li>
+    
+    <li><a href="../index.php">Page d'Accueil</a></li>
+    <li><a href="../visu/organisation.html">Les évènements</a></li>
+    <li class="select"><a href="../visu/connexion.html">Inscription/ Connection</a></a></li>
     <li><a href="../visu/paiement.html">Le Paiement</a></li>
     <li><a href="../visu/qrcode.html">Qr code page</a></li>
   </ul>
 
   <div id="page">
     <div id="header" class="header">
-  <h1>ICI, TU PEUX CREER ET PERSONNALISER TA BILLETERIE EN LIGNE ET LA GERER FACILEMENT!</h1>
+  <h1>ICI, TU PEUX T'IDENTIFIER OU TE CONNECTER SI TU AS DEJA UN COMPTE!</h1>
 
     <div id="page">
         <div id="header" class="header">
-    <a href="organisation.html">
-        <img src="../images/image_concert_rap.jpg" alt="image de concert" class="concert" href="organisation.html">
+    <a href="connexion.html">
+        <img src="../images/image_connexion.jpg" alt="image de connexion" class="connexion" href="connection.php">
     </a>
+    <form action="interface-user.php" method="post">
+      <p>
+          <input type="text" name="" />
+          <input type="submit" value="Valider" />
+      </p>
 
 </body>
 </html>
+

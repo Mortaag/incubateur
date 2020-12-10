@@ -25,9 +25,17 @@ $_SESSION['age'] = '24' ;
 <body>
     <img src="images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.html">
         <ul>
-            <li class="select"><a href="index.html">Page d'Accueil</a></li>
+            <li class="select"><a href="index.php">Page d'Accueil</a></li>
             <li><a href="visu/organisation.html">Les évènements</a></li>
-            <li><a href="visu/connexion.html">Inscription/ Connection</a></a></li>
+            <li> <?php
+            if ($_SESSION['user'] === 'user' && $_SESSION['mot_de_passe'] === 'mdp') {
+                echo "<html> <li> <a href='visu/interface-user.php'> Votre compte</a> </li> </html>";
+            } else {
+                echo "<html> <li> <a href='visu/connexion.html'> S'inscrire/se connecter </a> </li> </html>";
+            }
+            ?> 
+            
+            <a href="visu/interface-user.php">Votre compte</a></a></li>
             <li><a href="visu/paiement.html">Le Paiement</a></li>
             <li><a href="visu/qrcode.html">Qr code page</a></li>
         </ul>
