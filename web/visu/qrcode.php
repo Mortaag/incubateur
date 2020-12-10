@@ -3,14 +3,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
 
-<img src="../images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.html">
+<img src="../images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.php">
 <ul>
   
   <li><a href="../index.php">Page d'Accueil</a></li>
-  <li><a href="../visu/organisation.html">Les évènements</a></li>
-  <li><a href="../visu/connexion.html">Inscription/ Connection</a></a></li>
-  <li><a href="../visu/paiement.html">Le Paiement</a></li>
-  <li class="select"><a href="../visu/qrcode.html">Qr code page</a></li>
+  <li><a href="../visu/organisation.php">Les évènements</a></li>
+  <li><a href="../visu/connexion.php">Inscription/ Connection</a></a></li>
+  <li><a href="../visu/paiement.php">Le Paiement</a></li>
+  <li class="select"><a href="../visu/qrcode.php">Qr code page</a></li>
       </ul>
 
       <div id="page">
@@ -19,8 +19,8 @@
 
         <div id="page">
             <div id="header" class="header">
-        <a href="qrcode.html">
-            <img src="../images/image_qr_code.jpg" alt="image de qr code" class="qr code" href="qrcode.html">
+        <a href="qrcode.php">
+            <img src="../images/image_qr_code.jpg" alt="image de qr code" class="qr code" href="qrcode.php">
         </a>
 
 </body>
