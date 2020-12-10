@@ -23,21 +23,21 @@ $_SESSION['age'] = '24' ;
     <meta name="robots" content="noindex" />
 </head>
 <body>
-    <img src="images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.html">
+    <img src="images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.php">
         <ul>
             <li class="select"><a href="index.php">Page d'Accueil</a></li>
-            <li><a href="visu/organisation.html">Les évènements</a></li>
+            <li><a href="visu/organisation.php">Les événements</a></li>
             <li> <?php
             if ($_SESSION['user'] === 'user' && $_SESSION['mot_de_passe'] === 'mdp') {
                 echo "<html> <li> <a href='visu/interface-user.php'> Votre compte</a> </li> </html>";
             } else {
-                echo "<html> <li> <a href='visu/connexion.html'> S'inscrire/se connecter </a> </li> </html>";
+                echo "<html> <li> <a href='visu/connexion.php'> S'inscrire/se connecter </a> </li> </html>";
             }
             ?> 
             
             <a href="visu/interface-user.php">Votre compte</a></a></li>
-            <li><a href="visu/paiement.html">Le Paiement</a></li>
-            <li><a href="visu/qrcode.html">Qr code page</a></li>
+            <li><a href="visu/paiement.php">Le Paiement</a></li>
+            <li><a href="visu/qrcode.php">Qr code page</a></li>
         </ul>
         <p>
         <?php 
@@ -49,15 +49,41 @@ $_SESSION['age'] = '24' ;
         }
         ?>
     </p>
+    <div id="page">
+            <div id="header" class="header">
+         <h1>BIENVENU!</h1>  
+         <br></br>     
+        <h1>PROFITE DE TA BILLETERIE EN LIGNE, AVEC THE TICKETS!</h1>
 
 
     <h1>
         <div id="page">
             <div id="header" class="header">
-        <a href="index.html">
-            <img src="images/image_concert.webp" alt="image de concert" class="concert" href="index.html">
+        <a href="index.php">
+            <img src="images/image_concert.webp" alt="image de concert" class="concert" href="index.php">
         </a>
         </div>
     </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus et labore fugiat minima provident ad blanditiis quibusdam iusto ratione itaque enim dicta, suscipit cumque esse iste dolorem quisquam dolores tempore.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga fugit libero, tempore quidem illo veritatis veniam error alias placeat similique quos tempora excepturi molestias nihil vitae minima esse provident officia.</p>
+        <br>
+        <p>Lorem ipsum dolor</p>
+        <br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga fugit libero, tempore quidem illo veritatis veniam error alias placeat similique quos tempora excepturi molestias nihil vitae minima esse provident officia.</p>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
