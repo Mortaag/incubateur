@@ -26,7 +26,7 @@ $_SESSION['age'] = '24' ;
     <img src="images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.php">
         <ul>
             <li class="select"><a href="index.php">Page d'Accueil</a></li>
-            <li><a href="visu/organisation.php">Les évènements</a></li>
+            <li><a href="visu/organisation.php">Les événements</a></li>
             <li> <?php
             if ($_SESSION['user'] === 'user' && $_SESSION['mot_de_passe'] === 'mdp') {
                 echo "<html> <li> <a href='visu/interface-user.php'> Votre compte</a> </li> </html>";
