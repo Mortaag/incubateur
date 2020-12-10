@@ -22,6 +22,12 @@
     <a href="connexion.php">
         <img src="../images/image_connexion.jpg" alt="image de connexion" class="connexion" href="connection.php">
     </a>
+    <form action="interface-user.php" method="post">
+      <p>
+        
+          <input type="text" name="" />
+          <input type="submit" value="Valider" />
+      </p>
     </div>
     </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus et labore fugiat minima provident ad blanditiis quibusdam iusto ratione itaque enim dicta, suscipit cumque esse iste dolorem quisquam dolores tempore.</p>
@@ -36,12 +42,7 @@
 
 </body>
 </html>
-    <form action="interface-user.php" method="post">
-      <p>
-        
-          <input type="text" name="" />
-          <input type="submit" value="Valider" />
-      </p>
+    
 
 </body>
 </html>
