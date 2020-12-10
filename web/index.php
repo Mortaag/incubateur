@@ -31,7 +31,7 @@ $_SESSION['age'] = '24' ;
             if ($_SESSION['user'] === 'user' && $_SESSION['mot_de_passe'] === 'mdp') {
                 echo "<html> <li> <a href='visu/interface-user.php'> Votre compte</a> </li> </html>";
             } else {
-                echo "<html> <li> <a href='visu/connexion.html'> S'inscrire/se connecter </a> </li> </html>";
+                echo "<html> <li> <a href='visu/connexion.php'> S'inscrire/se connecter </a> </li> </html>";
             }
             ?> 
             
