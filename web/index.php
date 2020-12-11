@@ -5,7 +5,7 @@
 session_start();
 
 $_SESSION['user'] = 'user';
-$_SESSION['mot_de_passe'] = 'mdp';
+$_SESSION['mot_de_passe'] = '';
 $_SESSION['age'] = '24' ;
 
 
