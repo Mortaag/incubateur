@@ -23,7 +23,8 @@ $_SESSION['age'] = '24' ;
     <meta name="robots" content="noindex" />
 </head>
 <body>
-    <img src="images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.php">
+    <nav class= "nav-bar">
+        <img src="images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.php">
         <ul>
             <li class="select"><a href="index.php">Page d'Accueil</a></li>
             <li><a href="visu/organisation.php">Les événements</a></li>
@@ -34,11 +35,13 @@ $_SESSION['age'] = '24' ;
                 echo "<html> <li> <a href='visu/connexion.php'> S'inscrire/se connecter </a> </li> </html>";
             }
             ?> 
-            
+
             <a href="visu/interface-user.php">Votre compte</a></a></li>
             <li><a href="visu/paiement.php">Le Paiement</a></li>
             <li><a href="visu/qrcode.php">Qr code page</a></li>
         </ul>
+    </nav>
+    <div class= "margin-top">
         <p>
         <?php 
         
@@ -51,7 +54,7 @@ $_SESSION['age'] = '24' ;
     </p>
     <div id="page">
             <div id="header" class="header">
-         <h1>BIENVENU!</h1>  
+         <h1>BIENVENUE!</h1>  
          <br></br>     
         <h1>PROFITE DE TA BILLETERIE EN LIGNE, AVEC THE TICKETS!</h1>
 
@@ -70,7 +73,7 @@ $_SESSION['age'] = '24' ;
         <p>Lorem ipsum dolor</p>
         <br>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga fugit libero, tempore quidem illo veritatis veniam error alias placeat similique quos tempora excepturi molestias nihil vitae minima esse provident officia.</p>
-
+    </div>
 </body>
 </html>
 

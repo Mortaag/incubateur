@@ -7,6 +7,10 @@
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
 </head>
 <body>
+
+<nav class= "nav-bar">
+
+
 <img src="../images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.php">
 <ul>
     
@@ -16,8 +20,9 @@
     <li><a href="../visu/paiement.php">Le Paiement</a></li>
     <li><a href="../visu/qrcode.php">Qr code page</a></li>
   </ul>
+</nav>
+<div class= "margin-top">
 
-  
   <div id="page">
     <div id="header" class="header">
   <h1>ICI, TU PEUX T'IDENTIFIER OU TE CONNECTER SI TU AS DEJA UN COMPTE!</h1>
@@ -86,5 +91,7 @@ if ($_POST) {
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloremque sunt ipsam porro cumque nam molestiae cupiditate quasi amet minima aliquid hic deleniti eius aspernatur nobis quae, ratione facilis ab.</p>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis cum architecto nulla mollitia quasi quis, inventore explicabo ab a minima magnam quas recusandae dolores dolorem dolor temporibus in! Doloribus, repudiandae.</p>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam porro consequatur velit molestias sint illum delectus veniam nam fuga assumenda iste, inventore praesentium reprehenderit est tenetur eius repudiandae sunt eveniet.</p>  
- </body>    
+</div>
+
+</body>    
 </html>       
