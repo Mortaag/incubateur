@@ -52,6 +52,8 @@ if ($_POST) {
   }
   if(empty($_POST['mdp'])) {
     $tab ['mdp'] = " Ton mot de passe ne peut pas être vide";
+  } else {
+    echo ' <div  class="button"><button  type="submit">Envoyer votre message</button></div>';
   }
     
 } ?>
@@ -60,20 +62,20 @@ if ($_POST) {
   <div>
       <p>
       <label  for="Prénom">Prénom:</label>
-      <input  type="text"  id="prenom"  name="username">
+      <input  type="text"  id="prenom"  name="username" required>
       </p>
       <p> <?php if(empty($_POST['username'])) { 
         echo $tab['username'];} ?> </p>
     </div>  
   <div>
       <label  for="nom">mot de passe :</label>
-      <input  type="text"  id="nom"  name="mdp">
+      <input  type="text"  id="nom"  name="mdp" required hash>
       <p> <?php if(empty($_POST['mdp'])) { 
         echo $tab['mdp'];} ?> </p>
     </div>
     <div>
       <label  for="courriel">Courriel :</label>
-        <input  type="email"  id="courriel"  name="user_email">
+        <input  type="email"  id="courriel"  name="user_email" required>
         <p> <?php if(empty($_POST['user_email'])) { 
           echo $tab['user_email'];} ?> </p>
     </div>
