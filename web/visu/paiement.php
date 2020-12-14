@@ -21,7 +21,7 @@
     <div id="page">
         <div id="header" class="header">
     <a href="paiement.php">
-        <img src="../images/image_paiement_sans_contact.png" alt="image de paiement" class="paiement" href="paiement.php">
+        <img src="../images/paiement_paiement.jpg" alt="image de paiement" class="paiement" href="paiement.php">
     </a>
     </div>
     </div>

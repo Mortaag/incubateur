@@ -16,10 +16,10 @@ h2 {
     background-color: #FFFFFF;
     width: 100%;
     margin: 24px auto;
-    padding: 12px;
+    padding: -7px;
 }
 #header{
-    padding: 20px ;
+    padding: 3px ;
     text-align: center;
 }
 .header{ 

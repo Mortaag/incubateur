@@ -20,7 +20,7 @@
         <div id="page">
             <div id="header" class="header">
         <a href="qrcode.php">
-            <img src="../images/image_qr_code.jpg" alt="image de qr code" class="qr code" href="qrcode.php">
+            <img src="../images/qr_code_qr_code.jpg" alt="image de qr code" class="qr code" href="qrcode.php">
         </a>
         </div>
     </div>

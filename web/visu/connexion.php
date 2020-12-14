@@ -25,7 +25,7 @@
     <div id="page">
         <div id="header" class="header">
     <a href="connexion.php">
-        <img src="../images/image_connexion.jpg" alt="image de connexion" class="connexion" href="connection.php">
+        <img src="../images/connexion_inscription.jpg" alt="image de connexion" class="connexion" href="connection.php">
 </a>
 <?php 
 

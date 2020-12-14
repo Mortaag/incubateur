@@ -60,7 +60,7 @@ $_SESSION['age'] = '24' ;
         <div id="page">
             <div id="header" class="header">
         <a href="index.php">
-            <img src="images/image_concert.webp" alt="image de concert" class="concert" href="index.php">
+            <img src="images/concert_index.jpg" alt="image de concert" class="concert" href="index.php">
         </a>
         </div>
     </div>
