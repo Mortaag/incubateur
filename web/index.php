@@ -45,7 +45,7 @@ $_SESSION['age'] = '24' ;
         if ($_SESSION['user'] === 'user' && $_SESSION['mot_de_passe'] === 'mdp') {
             echo "Bonsoir " . $_SESSION['user'] . "! Bienvenue sur Thetickets.fr !";
         } else {
-            echo "Bonsoir ! Veuillez vous connectez pour accéder a votre compte utilisateur.";
+            echo "Bonjour ! Noubliez pas de vous connectez pour accéder a votre compte utilisateur.";
         }
         ?>
     </p>
