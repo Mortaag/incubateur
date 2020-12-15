@@ -5,7 +5,7 @@
 session_start();
 
 $_SESSION['user'] = 'user';
-$_SESSION['mot_de_passe'] = '';
+$_SESSION['mot_de_passe'] = 'Doe';
 $_SESSION['age'] = '24' ;
 
 
@@ -29,14 +29,14 @@ $_SESSION['age'] = '24' ;
             <li class="select"><a href="index.php">Page d'Accueil</a></li>
             <li><a href="visu/organisation.php">Les événements</a></li>
             <li> <?php
-            if ($_SESSION['user'] === 'user' && $_SESSION['mot_de_passe'] === 'mdp') {
-                echo "<html> <li> <a href='visu/interface-user.php'> Votre compte</a> </li> </html>";
-            } else {
-                echo "<html> <li> <a href='visu/connexion.php'> S'inscrire/se connecter </a> </li> </html>";
-            }
+            // if ($_SESSION['user'] === 'user' && $_SESSION['mot_de_passe'] === 'mdp') {
+            //     echo "<html> <li> <a href='visu/interface-user.php'> Votre compte</a> </li> </html>";
+            // } else {
+            //     echo "<html> <li> <a href='visu/connexion.php'> S'inscrire/se connecter </a> </li> </html>";
+            // }
             ?> 
 
-            <a href="visu/interface-user.php">Votre compte</a></a></li>
+            <a href="visu/connexion.php">Votre compte</a></a></li>
             <li><a href="visu/paiement.php">Le Paiement</a></li>
             <li><a href="visu/qrcode.php">Qr code page</a></li>
         </ul>

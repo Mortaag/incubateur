@@ -35,27 +35,26 @@
 <?php 
 
     $username=$_POST['username'];
-    $motdepasse=$_POST['mdp'];
+    $motdepasse= '';
     $email=$_POST['user_email'];
-    $number = $_POST['user_number'];
-    $message = $_POST['user_message'];
-    $sujet = $_POST ['sujet'];
-if ($_POST) {
-  $tab = array();
+    $erreur = null;
 
-  if(empty($_POST['user_name'])) {
-    $tab['user_name'] = " Ton nom d'utilisateur ne peut pas être vide.";
-  }
-  if(empty($_POST['user_email'])) {
-    $tab ['user_email'] = " Ton email ne peut pas être vide." ;
-  }
-  if(empty($_POST['mdp'])) {
-    $tab ['mdp'] = " Ton mot de passe ne peut pas être vide";
-  } else {
-    echo ' <div  class="button"><button  type="submit">Envoyer votre message</button></div>';
-  }
+// if ($_POST) {
+//   $tab = array();
+
+//   if(empty($_POST['user_name'])) {
+//     $tab['user_name'] = " Ton nom d'utilisateur ne peut pas être vide.";
+//   }
+//   if(empty($_POST['user_email'])) {
+//     $tab ['user_email'] = " Ton email ne peut pas être vide." ;
+//   }
+//   if(empty($_POST['mdp'])) {
+//     $tab ['mdp'] = " Ton mot de passe ne peut pas être vide";
+//   } else {
+//     echo ' <div  class="button"><button  type="submit">Envoyer votre message</button></div>';
+//   }
     
-} ?>
+// } ?>
 <body>
 <form  action="interface-user.php"  method="post">
   <div>
@@ -63,14 +62,30 @@ if ($_POST) {
       <label  for="Prénom">Prénom:</label>
       <input  type="text"  id="prenom"  name="username" required>
       </p>
-      <p> <?php if(empty($_POST['username'])) { 
-        echo $tab['username'];} ?> </p>
+      <p> <?php 
+      if($_POST['Prénom'] === 'username') {
+        if(empty($_POST['Prénom'])) {
+        session_start();
+        $_SESSION['connecte'] = 1;
+        header('Location : /interface-user.php');
+        exit();
+        } else {
+          $erreur = 'Identifiants Incorrects';
+        }
+      }  ?>
     </div>  
   <div>
       <label  for="nom">mot de passe :</label>
       <input  type="text"  id="nom"  name="mdp" required hash>
-      <p> <?php if(empty($_POST['mdp'])) { 
-        echo $tab['mdp'];} ?> </p>
+      <p> <?php if(empty($_POST['motdepasse'])) {
+      session_start();
+      $_SESSION['connecte'] = 1;
+      header('Location : /interface-user.php');
+      exit();
+      } else {
+        $erreur = 'Identifiants Incorrects';
+      }
+      ?> </p>
     </div>
     <div>
       <label  for="courriel">Courriel :</label>
