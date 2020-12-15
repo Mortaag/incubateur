@@ -2,6 +2,9 @@
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
+<body>
+
+<nav class= "nav-bar">
 
 <img src="../images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.php">
 <ul>
@@ -12,6 +15,8 @@
     <li><a href="../visu/paiement.php">Le Paiement</a></li>
     <li><a href="../visu/qrcode.php">Qr code page</a></li>
   </ul>
+</nav>
+<div class= "margin-top">
 
   <div id="page">
     <div id="header" class="header">
@@ -34,6 +39,7 @@
 <br>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis cum architecto nulla mollitia quasi quis, inventore explicabo ab a minima magnam quas recusandae dolores dolorem dolor temporibus in! Doloribus, repudiandae.</p>
 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime aliquam nobis laudantium iste saepe harum vero alias, labore quaerat, consequatur impedit? Eligendi placeat recusandae atque iste et ex molestiae quasi.</p>
+</div>
 
 </body>
 </html>
