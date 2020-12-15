@@ -113,3 +113,11 @@ li:last-child {
     background-color: gold;
     height: 40px;
 }
+
+
+@media (min-width:800px{
+    body {
+       width:100%;
+       background-color: gold;
+}
+}
