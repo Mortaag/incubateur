@@ -36,7 +36,7 @@
 
     $username=$_POST['username'];
     $motdepasse= '';
-    $email=$_POST['user_email'];
+    $email=$_POST['email'];
     $erreur = null;
 
 // if ($_POST) {
@@ -76,7 +76,7 @@
     </div>  
   <div>
       <label  for="nom">mot de passe :</label>
-      <input  type="text"  id="nom"  name="mdp" required hash>
+      <input  type="text"  id="nom"  name="mdp" required>
       <p> <?php if(empty($_POST['motdepasse'])) {
       session_start();
       $_SESSION['connecte'] = 1;
