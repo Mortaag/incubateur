@@ -42,11 +42,11 @@ $_SESSION['age'] = '24' ;
         <p>
         <?php 
         
-        if ($_SESSION['user'] === 'user' && $_SESSION['mot_de_passe'] === 'mdp') {
-            echo "Bonsoir " . $_SESSION['user'] . "! Bienvenue sur Thetickets.fr !";
-        } else {
-            echo "Bonjour ! Noubliez pas de vous connectez pour accéder a votre compte utilisateur.";
-        }
+        // if ($_SESSION['user'] === 'user' && $_SESSION['mot_de_passe'] === 'mdp') {
+        //     echo "Bonsoir " . $_SESSION['user'] . "! Bienvenue sur Thetickets.fr !";
+        // } else {
+        //     echo "Bonjour ! Noubliez pas de vous connectez pour accéder a votre compte utilisateur.";
+        // }
         ?>
     </p>
     <div id="page">

@@ -29,7 +29,6 @@
 </a>
 <?php 
 
-
     $username=$_POST['username'];
     $motdepasse=$_POST['mdp'];
     $email=$_POST['user_email'];
