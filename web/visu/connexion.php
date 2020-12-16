@@ -35,7 +35,7 @@
 <?php 
 
     $username=$_POST['username'];
-    $motdepasse= '';
+    $motdepasse=$_POST['mdp'];
     $email=$_POST['user_email'];
     $erreur = null;
 
@@ -76,27 +76,31 @@
     </div>  
   <div>
       <label  for="nom">mot de passe :</label>
-      <input  type="text"  id="nom"  name="mdp" required hash>
-      <p> <?php if(empty($_POST['motdepasse'])) {
-      session_start();
-      $_SESSION['connecte'] = 1;
-      header('Location : /interface-user.php');
-      exit();
-      } else {
-        $erreur = 'Identifiants Incorrects';
+      <input  type="text"  id="nom"  name="mdp" required>
+      <p> <?php 
+      if($_POST['motdepasse'] === 'mdp') {
+        if(empty($_POST['mdp'])) {
+        session_start();
+        $_SESSION['connecte'] = 1;
+        header('Location : /interface-user.php');
+        exit();
+        } else {
+          $erreur = 'Identifiants Incorrects';
+        }
       }
-      ?> </p>
+      ?> 
+      </p>
     </div>
     <div>
       <label  for="courriel">Courriel :</label>
         <input  type="email"  id="courriel"  name="user_email" required>
-        <p> <?php if(empty($_POST['user_email'])) { 
-          echo $tab['user_email'];} ?> </p>
+        <p> <?php 
+        
+          ?> </p>
     </div>
     <div  class="button">
       <button  type="submit">Envoyer votre message</button>
     </div>
-    
     </form>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus et labore fugiat minima provident ad blanditiis quibusdam iusto ratione itaque enim dicta, suscipit cumque esse iste dolorem quisquam dolores tempore.</p>
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga fugit libero, tempore quidem illo veritatis veniam error alias placeat similique quos tempora excepturi molestias nihil vitae minima esse provident officia.</p>
@@ -110,4 +114,4 @@
 </div>
 
 </body>    
-</html>       
+</html>           
