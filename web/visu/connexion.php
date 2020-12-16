@@ -39,22 +39,7 @@
     $email=$_POST['user_email'];
     $erreur = null;
 
-// if ($_POST) {
-//   $tab = array();
-
-//   if(empty($_POST['user_name'])) {
-//     $tab['user_name'] = " Ton nom d'utilisateur ne peut pas être vide.";
-//   }
-//   if(empty($_POST['user_email'])) {
-//     $tab ['user_email'] = " Ton email ne peut pas être vide." ;
-//   }
-//   if(empty($_POST['mdp'])) {
-//     $tab ['mdp'] = " Ton mot de passe ne peut pas être vide";
-//   } else {
-//     echo ' <div  class="button"><button  type="submit">Envoyer votre message</button></div>';
-//   }
-    
-// } ?>
+ ?>
 <body>
 <form  action="interface-user.php"  method="post">
   <div>

@@ -29,11 +29,7 @@ $_SESSION['age'] = '24' ;
             <li class="select"><a href="index.php">Page d'Accueil</a></li>
             <li><a href="visu/organisation.php">Les évènements</a></li>
             <li> <?php
-            // if ($_SESSION['user'] === 'user' && $_SESSION['mot_de_passe'] === 'mdp') {
-            //     echo "<html> <li> <a href='visu/interface-user.php'> Votre compte</a> </li> </html>";
-            // } else {
-            //     echo "<html> <li> <a href='visu/connexion.php'> S'inscrire/se connecter </a> </li> </html>";
-            // }
+           
             ?> 
 
             <a href="visu/connexion.php">Votre compte</a></a></li>
@@ -45,11 +41,7 @@ $_SESSION['age'] = '24' ;
         <p>
         <?php 
         
-        // if ($_SESSION['user'] === 'user' && $_SESSION['mot_de_passe'] === 'mdp') {
-        //     echo "Bonsoir " . $_SESSION['user'] . "! Bienvenue sur Thetickets.fr !";
-        // } else {
-        //     echo "Bonjour ! Noubliez pas de vous connectez pour accéder a votre compte utilisateur.";
-        // }
+       
         ?>
     </p>
     <div id="page">

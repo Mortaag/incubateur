@@ -30,6 +30,8 @@ h2 {
 #header{
     padding: 3px ;
     text-align: center;
+    align-content : center;
+    margin: auto;
 }
 .header{ 
     background-color: white; 
