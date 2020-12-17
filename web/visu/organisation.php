@@ -36,27 +36,10 @@
                
 </div>
 
-<<<<<<< HEAD
-
-=======
 <?php
-            $servername = '8000';
-            $username = 'root';
-            $password = 'root';
-            
-        
-            try{
-                $conn = new PDO("mysql:host=$servername;dbname=bdd.sql", $username, $password);
-                
-                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                echo 'Connexion réussie';
-            }
-            
-            
-            catch(PDOException $e){
-              echo "Erreur : " . $e->getMessage();
-            }
-        ?>
->>>>>>> e48d4de98673bafd56695f285336e82318652f15
+$ma_bd=new
+PDO('mysql:host=localhost;dbname= c0_thetickets_bd','c0_thetickets','L3J6!;j7dA9+zBe');
+INSERT INTO
+?>
 </body>
 </html>
