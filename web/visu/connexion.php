@@ -90,13 +90,7 @@
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus et labore fugiat minima provident ad blanditiis quibusdam iusto ratione itaque enim dicta, suscipit cumque esse iste dolorem quisquam dolores tempore.</p>
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga fugit libero, tempore quidem illo veritatis veniam error alias placeat similique quos tempora excepturi molestias nihil vitae minima esse provident officia.</p>
 <br>
-<p>Lorem ipsum dolor</p>
-      
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga fugit libero, tempore quidem illo veritatis veniam error alias placeat similique quos tempora excepturi molestias nihil vitae minima esse provident officia.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloremque sunt ipsam porro cumque nam molestiae cupiditate quasi amet minima aliquid hic deleniti eius aspernatur nobis quae, ratione facilis ab.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis cum architecto nulla mollitia quasi quis, inventore explicabo ab a minima magnam quas recusandae dolores dolorem dolor temporibus in! Doloribus, repudiandae.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam porro consequatur velit molestias sint illum delectus veniam nam fuga assumenda iste, inventore praesentium reprehenderit est tenetur eius repudiandae sunt eveniet.</p>  
+<p>Lorem ipsum dolor</p>    
 </div>
-
 </body>    
 </html>           

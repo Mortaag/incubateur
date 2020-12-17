@@ -32,7 +32,7 @@ $_SESSION['age'] = '24' ;
            
             ?> 
 
-            <a href="visu/connexion.php">Votre compte</a></a></li>
+            <a href="visu/connexion.php">Inscription/ Connection</a></a></li>
             <li><a href="visu/paiement.php">Le Paiement</a></li>
             <li><a href="visu/qrcode.php">Qr code page</a></li>
         </ul>
@@ -46,7 +46,7 @@ $_SESSION['age'] = '24' ;
     </p>
     <div id="page">
             <div id="header" class="header">
-         <h1>BIENVENUE!</h1>  
+         <h1>BIENVENUE</h1>  
          <br></br>     
         <h1>PROFITE DE TA BILLETERIE EN LIGNE, AVEC THE TICKETS!</h1>
 
@@ -59,12 +59,15 @@ $_SESSION['age'] = '24' ;
         </a>
         </div>
     </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus et labore fugiat minima provident ad blanditiis quibusdam iusto ratione itaque enim dicta, suscipit cumque esse iste dolorem quisquam dolores tempore.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga fugit libero, tempore quidem illo veritatis veniam error alias placeat similique quos tempora excepturi molestias nihil vitae minima esse provident officia.</p>
-        <br>
-        <p>Lorem ipsum dolor</p>
-        <br>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga fugit libero, tempore quidem illo veritatis veniam error alias placeat similique quos tempora excepturi molestias nihil vitae minima esse provident officia.</p>
+        <p>The Tickets est une billetterie en ligne qui vous permet d'organiser simplement des évènements qui vous correspondent.</p>
+        <p>Créez vous-même des moments et des évènements inoubliables pour tisser des liens forts avec votre public.</p>
+        <div id="page">
+            <div id="header" class="header">
+        <a href="index.php">
+            <img src="images/ticket_index.jpg" alt="image de ticket" class="ticket" href="index.php">
+        </a>
+        </div>
+        <p>Une vrai solution pour tout les types d'évènements: Concert, spectacle, séminaire etc...</p>
     </div>
 </body>
 </html>
