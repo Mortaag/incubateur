@@ -29,17 +29,17 @@
         </a>
         </div>
     </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus et labore fugiat minima provident ad blanditiis quibusdam iusto ratione itaque enim dicta, suscipit cumque esse iste dolorem quisquam dolores tempore.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga fugit libero, tempore quidem illo veritatis veniam error alias placeat similique quos tempora excepturi molestias nihil vitae minima esse provident officia.</p>
-        
-        <p>Lorem ipsum dolor</p>
-        
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga fugit libero, tempore quidem illo veritatis veniam error alias placeat similique quos tempora excepturi molestias nihil vitae minima esse provident officia.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam doloremque sunt ipsam porro cumque nam molestiae cupiditate quasi amet minima aliquid hic deleniti eius aspernatur nobis quae, ratione facilis ab.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis cum architecto nulla mollitia quasi quis, inventore explicabo ab a minima magnam quas recusandae dolores dolorem dolor temporibus in! Doloribus, repudiandae.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non dolores quod harum commodi dolore a sint illum explicabo! Ipsum harum nihil at nisi laudantium deleniti minus! Tempora, eaque eum!</p>
-<br>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus aperiam odio pariatur molestiae, perspiciatis deleniti quis animi fugit assumenda voluptate vel sequi tempora distinctio, dolorem officia similique harum inventore incidunt.</p>
+        <h2>Envoie toi ton qr code par mail !</h2>
+        <br>
+        <nav class="boite">
+        <h1>Nous te conseillons d'en prendre bien soin et de ne pas le perdre!</1>
+        </nav>
+        <br>
+        <div  class="button">
+        <label>Ton adresse E-mail:</label> 
+        <input  type="email"  id="courriel"  name="user_email" required>
+      <button  type="submit">Envoyer</button>
+    </div>
 </div>
 </body>
 </html>
