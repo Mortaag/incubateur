@@ -46,7 +46,7 @@ $_SESSION['age'] = '24' ;
     </p>
     <div id="page">
             <div id="header" class="header">
-         <h1>BIENVENUE!</h1>  
+         <h1>BIENVENUE</h1>  
          <br></br>     
         <h1>PROFITE DE TA BILLETERIE EN LIGNE, AVEC THE TICKETS!</h1>
 
@@ -59,15 +59,15 @@ $_SESSION['age'] = '24' ;
         </a>
         </div>
     </div>
-        <p>The Tickets est une billetterie en ligne qui vous permet d'organiser simplement des évènement qui vous corresponde.</p>
-        <p>Crée vous-même des moments des évènements inoubliable pour tiser des liens fort avec votre public.</p>
+        <p>The Tickets est une billetterie en ligne qui vous permet d'organiser simplement des évènements qui vous correspondent.</p>
+        <p>Créez vous-même des moments et des évènements inoubliables pour tisser des liens forts avec votre public.</p>
         <div id="page">
             <div id="header" class="header">
         <a href="index.php">
             <img src="images/ticket_index.jpg" alt="image de ticket" class="ticket" href="index.php">
         </a>
         </div>
-        <p>Une vrai solution pour tout les types d'évènement</p>
+        <p>Une vrai solution pour tout les types d'évènements: Concert, spectacle, séminaire etc...</p>
     </div>
 </body>
 </html>
