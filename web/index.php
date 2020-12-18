@@ -28,11 +28,8 @@ $_SESSION['age'] = '24' ;
         <ul>
             <li class="select"><a href="index.php">Page d'Accueil</a></li>
             <li><a href="visu/organisation.php">Les évènements</a></li>
-            <li> <?php
-           
-            ?> 
-
-            <a href="visu/connexion.php">Inscription/ Connection</a></a></li>
+            <li> 
+            <a href="visu/creation-compte.php">Inscription/ Connection</a></a></li>
             <li><a href="visu/paiement.php">Le Paiement</a></li>
             <li><a href="visu/qrcode.php">Qr code page</a></li>
         </ul>
