@@ -28,9 +28,9 @@ require_once 'navbar.php';
 </div>
 
 <?php
-$ma_bd=new
-PDO('mysql:host=localhost;dbname= c0_thetickets_bd','c0_thetickets','L3J6!;j7dA9+zBe');
-INSERT INTO
+// $ma_bd=new
+// PDO('mysql:host=localhost;dbname= c0_thetickets_bd','c0_thetickets','L3J6!;j7dA9+zBe');
+// INSERT INTO
 ?>
 </body>
 </html>
