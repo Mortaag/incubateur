@@ -6,6 +6,15 @@
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
 </head>
 <body>
+<nav class= "nav-bar">
+        <img src="../images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.php">
+        <ul class="navigation">
+            <li class="select"><a href="../index.php">Page d'Accueil</a></li>
+            <li><a href="../visu/organisation.php">Les évènements</a></li>
+            <li><a href="../visu/creation-compte.php">Inscription/ Connection</a></li>
+            <li><a href="../visu/paiement.php">Le Paiement</a></li>
+        </ul>
+    </nav>
 
 <?php 
 require_once 'navbar.php';
@@ -44,7 +53,6 @@ echo "INSERT INTO `Utilisateurs` ( `Nom`, `Description`, `NbPlaces`) VALUES ('" 
                
 </div>
 
-<<<<<<< HEAD
 <?php
 $ma_bd=new
 PDO('mysql:host=localhost;dbname= c0_thetickets_bd','c0_thetickets','L3J6!;j7dA9+zBe');
@@ -52,8 +60,5 @@ PDO('mysql:host=localhost;dbname= c0_thetickets_bd','c0_thetickets','L3J6!;j7dA9
 $n=$ma_bd->exec("INSERT INTO SecteurEntreprise");
 
 ?>
-=======
-
->>>>>>> 5cf68c93672d401df6caaeda29b8e5450f5ce1b0
 </body>
 </html>

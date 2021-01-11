@@ -8,36 +8,37 @@
 <body>
 
 <nav class= "nav-bar">
+        <img src="../images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.php">
+        <ul class="navigation">
+            <li class="select"><a href="../index.php">Page d'Accueil</a></li>
+            <li><a href="../visu/organisation.php">Les évènements</a></li>
+            <li><a href="../visu/creation-compte.php">Inscription/ Connection</a></li>
+            <li><a href="../visu/paiement.php">Le Paiement</a></li>
+        </ul>
+    </nav>
+    <div class= "margin-top">
+        <p>
+        <?php 
+        
+       
+        ?>
+    </p>
 
-<img src="../images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.php">
-<ul>
-  
-    <li><a href="../index.php">Page d'Accueil</a></li>
-    <li><a href="../visu/organisation.php">Les évènements</a></li>
-    <li><a href="../visu/connexion.php">Inscription/ Connection</a></a></li>
-    <li class="select"><a href="../visu/paiement.php">Le Paiement</a></li>
-    <li><a href="../visu/qrcode.php">Qr code page</a></li>
-  </ul>
-</nav>
-<h1> MERCI POUR TON ACHAT!</h1>
-<h1> UN PEUT PLUS BAS TU POURRA RECUPERER TON QR CODE !!</h1>
+<h1> MERCI POUR VOTRE ACHAT!</h1>
+<br>
+<h1>Vous avez procédé au paiement. Vous avez désormais créé votre évènement !</h1>
+<h1> Un peu plus bas vous pourrez recuperer votre Qr Code !!</h1>
 <img class="imagepaiement" src="../images/concert_01.jpg" alt="image concert" class="concert" href="index.php">
-<div id="page">
-            <div id="header" class="header">
+
         <a href="qrcode.php">
-            <img src="../images/qr_code_qr_code.jpg" alt="image de qr code" class="qr code" href="qrcode.php">
         </a>
-        </div>
-    </div>
-        <h2>Envoie toi ton qr code par mail !</h2>
+
+        <h1>Voici votre Qr Code !</h1>
+        <img src="../images/qr_code.jpg" alt="image de qr code" class="qrcode" href="qrcode.php">
+
         <br>
         <nav class="boite">
-        <h1>Nous te conseillons d'en prendre bien soin et de ne pas le perdre!</1>
+        <h1>Nous vous conseillons de bien la conserver avec soin pour ne pas le perdre!</1>
         </nav>
-        <br>
-        <div  class="button">
-        <label>Ton adresse E-mail:</label> 
-        <input  type="email"  id="courriel"  name="user_email" required>
-      <button  type="submit">Envoyer</button>
 </body>
 </html>

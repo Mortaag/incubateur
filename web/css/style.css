@@ -133,14 +133,37 @@ li:last-child {
         text-align : center;
         padding : 1em;
         border : 0.9em solid rgb(255, 2, 2);
-        width  : 13em;
+        width  : 15em;
         height : 13em;
         border-radius: 100%;
         margin: auto;
       }
-
 .imagepaiement{
         width:100%;
         height: auto;
-
     }   
+.qrcode{
+    width: 600px;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navigation{
+    display: flex;
+    justify-content: space-around;
+}
+.bouton_payer{
+    background-color: #356aab;
+    padding: 1rem 2rem 1rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    border-radius: 1rem;
+}
+.bouton_payer:hover{
+    background-color: yellow;
+    color: black;
+}
