@@ -66,7 +66,7 @@ $_SESSION['age'] = '24' ;
         </a>
         </div>
         <p>Une vrai solution pour tout les types d'évènements: Concert, spectacle, séminaire etc...</p>
-    </div>
+    </div> 
 </body>
 </html>
 

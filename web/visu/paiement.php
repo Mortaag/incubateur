@@ -1,7 +1,10 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>The Tickets</title>
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
+</head>
 <body>
 
 <nav class= "nav-bar">
@@ -34,6 +37,8 @@
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga fugit libero, tempore quidem illo veritatis veniam error alias placeat similique quos tempora excepturi molestias nihil vitae minima esse provident officia.</p>
         <br>
         <p>Lorem ipsum dolor</p>
+      <br>
+        <a href="achatTermine.php">PAYER</a>
 </div>
 </body>
 </html>
