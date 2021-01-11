@@ -16,10 +16,12 @@ body {
 }
 h1 {
     color: black;
-    
+    text-align: center;
+    font-family: Verdana, monospace;
 }
 h2 { 
     font-size: 1.2em;
+    text-align: center;
  }
 
 #page{
@@ -27,6 +29,7 @@ h2 {
     width: 100%;
     margin: 24px auto;
     padding: -7px;
+    align-content : center;
 }
 #header{
     padding: 3px ;
@@ -135,3 +138,9 @@ li:last-child {
         border-radius: 100%;
         margin: auto;
       }
+
+.imagepaiement{
+        width:100%;
+        height: auto;
+
+    }   

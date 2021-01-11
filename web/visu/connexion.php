@@ -1,26 +1,18 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>The Tickets</title>
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
 </head>
 <body>
 
-<nav class= "nav-bar">
-
-
-<img src="../images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.php">
-<ul>
-    
-    <li><a href="../index.php">Page d'Accueil</a></li>
-    <li><a href="../visu/organisation.php">Les évènements</a></li>
-    <li class="select"><a href="../visu/connexion.php">Inscription/ Connection</a></a></li>
-    <li><a href="../visu/paiement.php">Le Paiement</a></li>
-    <li><a href="../visu/qrcode.php">Qr code page</a></li>
-  </ul>
-</nav>
+<?php 
+require_once 'navbar.php';
+?>
 <div class= "margin-top">
 
   <div id="page">
