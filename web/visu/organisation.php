@@ -39,7 +39,9 @@
 <?php
 $ma_bd=new
 PDO('mysql:host=localhost;dbname= c0_thetickets_bd','c0_thetickets','L3J6!;j7dA9+zBe');
-INSERT INTO
+
+$n=$ma_bd->exec("INSERT INTO SecteurEntreprise");
+
 ?>
 </body>
 </html>
