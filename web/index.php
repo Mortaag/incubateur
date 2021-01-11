@@ -23,6 +23,7 @@ $_SESSION['age'] = '24' ;
     <meta name="robots" content="noindex" />
 </head>
 <body>
+    
     <nav class= "nav-bar">
         <img src="images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.php">
         <ul>

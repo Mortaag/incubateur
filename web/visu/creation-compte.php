@@ -1,14 +1,14 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="web/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="..\css\style.css" />
 </head>
 <body>
+
 <?php 
 require_once 'navbar.php'; 
 ?>
@@ -24,6 +24,9 @@ require_once 'navbar.php';
         Pays : <input type="text" name="Pays">
         <button type="submit">Créer un compte</button>
 
+
+
 </form>
+
 </body>
 </html>
