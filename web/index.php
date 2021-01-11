@@ -45,7 +45,7 @@ $_SESSION['age'] = '24' ;
             <div id="header" class="header">
          <h1>BIENVENUE</h1>  
          <br></br>     
-        <h1>PROFITE DE TA BILLETERIE EN LIGNE, AVEC THE TICKETS!</h1>
+        <h1>Profitez de votre billeterie en ligne, avec The Tickets!</h1>
 
 
     <h1>
