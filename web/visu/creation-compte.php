@@ -32,11 +32,11 @@ require_once 'navbar.php';
 <form action="creation-compte2.php" method="POST">
         Nom :<input type="text" name="Nom">
         Prénom :<input type="text" name="Prenom"> 
-        Mot de passe :<input type="password" name="mot-de-passe">
-        Adresse Mail : <input type="email" name="mail">
+        Mot de passe :<input type="password" name="MotDePasse">
+        Adresse Mail : <input type="email" name="AdressMail">
         Adresse : <input type="text" name="Adresse">
-        Code Postal : <input type="text" name="Postal" pattern="[0-9]{5}">
-        Ville : <input type="text" name="ville">
+        Code Postal : <input type="text" name="CodePostal" pattern="[0-9]{5}">
+        Ville : <input type="text" name="Ville">
         Pays : <input type="text" name="Pays">
         <button type="submit">Créer un compte</button>
 
