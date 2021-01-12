@@ -11,9 +11,6 @@
         <img src="../images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.php">
         <ul class="navigation">
             <li class="select"><a href="../index.php">Page d'Accueil</a></li>
-            <li><a href="../visu/organisation.php">Les évènements</a></li>
-            <li><a href="../visu/creation-compte.php">Inscription/ Connection</a></li>
-            <li><a href="../visu/paiement.php">Le Paiement</a></li>
         </ul>
     </nav>
     <div class= "margin-top">
@@ -38,7 +35,9 @@
 
         <br>
         <nav class="boite">
-        <h1>Nous vous conseillons de bien la conserver avec soin pour ne pas le perdre!</1>
+        <h1>Nous vous conseillons de prendre en 📷 votre Qr code afin de ne pas l'égarée !</1>
+        <h2></h2>
+
         </nav>
 </body>
 </html>

@@ -14,7 +14,6 @@
             <li><a href="../index.php">Page d'Accueil</a></li>
             <li><a href="../visu/organisation.php">Les évènements</a></li>
             <li class="select"><a href="../visu/creation-compte.php">Inscription/ Connection</a></li>
-            <li><a href="../visu/paiement.php">Le Paiement</a></li>
         </ul>
     </nav>
     <div class= "margin-top">

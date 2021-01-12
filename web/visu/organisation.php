@@ -12,7 +12,6 @@
             <li><a href="../index.php">Page d'Accueil</a></li>
             <li class="select"><a href="../visu/organisation.php">Les évènements</a></li>
             <li><a href="../visu/creation-compte.php">Inscription/ Connection</a></li>
-            <li><a href="../visu/paiement.php">Le Paiement</a></li>
         </ul>
     </nav>
 
@@ -31,7 +30,7 @@ require_once 'navbar.php';
     Nombre de place<input type="number" name="NbPlaces">
   
    
-  <button type="submit">Payer </button>
+    <a class= "bouton_payer" href="achatTermine.php">PAYER</a>
   </form>
   
     <div id="page">
@@ -40,12 +39,6 @@ require_once 'navbar.php';
         <img src="../images/concert_evenement.jpg" alt="image de concert" class="concert" href="organisation.php">
     </a>
     </div>
-    </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus et labore fugiat minima provident ad blanditiis quibusdam iusto ratione itaque enim dicta, suscipit cumque esse iste dolorem quisquam dolores tempore.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga fugit libero, tempore quidem illo veritatis veniam error alias placeat similique quos tempora excepturi molestias nihil vitae minima esse provident officia.</p>
-        <br>
-        <p>Lorem ipsum dolor</p>
-               
 </div>
 
 <?php
