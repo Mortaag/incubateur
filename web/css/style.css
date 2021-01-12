@@ -8,11 +8,12 @@ body {
     position: fixed;
     font-family: Verdana, fantasy;
     background: rgb(255, 255, 255);
-    margin-left: -5px;
-    margin-top: -200px;
+    margin-left: auto;
+    width: 100%;
+    
 }
 .margin-top{
-    margin-top: 200px;
+    background-color: black;
 }
 h1 {
     color: black;
@@ -24,11 +25,10 @@ h2 {
     text-align: center;
  }
 
-#page{
-    background-color: #FFFFFF;
+.page{
+    background-color: #a6eaff;
     width: 100%;
-    margin: 24px auto;
-    padding: -7px;
+    height: 2100px;
     align-content : center;
 }
 #header{
@@ -40,7 +40,7 @@ h2 {
 }
 .header{ 
     font-family: Verdana, monospace;
-    background-color: white; 
+     
     color: #000000; 
 }
 #content {
@@ -95,12 +95,12 @@ ul {
 li {
     float: left;
     border-right: 1px solid rgb(250, 248, 248);
-    width: 19%;
+    width: 25%;
+    text-align: center;
 }
 
 li a {
     display: block;
-    text-align: center;
     padding: 5px 104px;
     text-decoration: none;
     width: 25%;

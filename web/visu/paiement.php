@@ -16,18 +16,17 @@
             <li class="select"><a href="../visu/paiement.php">Le Paiement</a></li>
         </ul>
     </nav>
-<div class= "margin-top">
 
-  <div id="page">
+
+  <div class="page">
     <div id="header" class="header">
   <h1>ICI, VOUS POUVEZ PROCEDER AU REGLEMENT DE VOTRE EVENEMENT EN TOUTE SECURITE!</h1>
 
-    <div id="page">
-        <div id="header" class="header">
+
     <a href="paiement.php">
         <img src="../images/paiement_paiement.jpg" alt="image de paiement" class="paiement" href="paiement.php">
     </a>
-    </div>
+
     </div>
     <p> regler vos achats ici </p>
     <p>⇩<p>
