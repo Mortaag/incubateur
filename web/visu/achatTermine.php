@@ -36,7 +36,7 @@
         <br>
         <nav class="boite">
         <h1>Nous vous conseillons de prendre en 📷 votre Qr code afin de ne pas l'égarée !</1>
-        <h2></h2>
+        
 
         </nav>
 </body>
