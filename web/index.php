@@ -19,7 +19,7 @@ $_SESSION['age'] = '24' ;
     <title>The Tickets</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="shortcut icon" href="web/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <meta name="robots" content="noindex" />
 </head>
 <body>
