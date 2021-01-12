@@ -16,20 +16,15 @@ require_once 'navbar.php';
     <div id="header" class="header">
   <h1>ICI, TU PEUX CREER ET PERSONNALISER TA BILLETERIE EN LIGNE ET LA GERER FACILEMENT!</h1>
 
-  <form action="" method="post">
+  <form action="organisation2.php" method="post">
     Nom de l'évènement<input type="text" name="Nom">
-    Description de l'évènement<input type="text" name="Description">
+    Description de l'évènement<input type="text" name="Descrip">
     Nombre de place<input type="number" name="NbPlaces">
   
    
-  <button><a href=""> Payer</a></button>
+  <button type="submit">Payer </button>
   </form>
-  <?php
-$bd=new PDO('mysql:host=localhost;dbname=c0_thetickets_BD','c0_thetickets','L3J6!;j7dA9+zBe');
-// $bd->exec("INSERT INTO `Utilisateurs` ( `Nom`, `Description`, `NbPlaces`) VALUES ('" . $_POST['Nom'] . "', '" . $_POST['Description'] . "', '" . $_POST['NbPlaces'] . "') ");
-echo "INSERT INTO `Utilisateurs` ( `Nom`, `Description`, `NbPlaces`) VALUES ('" . $_POST['Nom'] . "', '" . $_POST['Description'] . "', '" . $_POST['NbPlaces'] . "') ";
-
-?>
+  
     <div id="page">
         <div id="header" class="header">
     <a href="organisation.php">
