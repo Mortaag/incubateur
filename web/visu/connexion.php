@@ -78,11 +78,7 @@ require_once 'navbar.php';
     <div  class="button">
       <button  type="submit">Envoyer votre message</button>
     </div>
-    </form>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus et labore fugiat minima provident ad blanditiis quibusdam iusto ratione itaque enim dicta, suscipit cumque esse iste dolorem quisquam dolores tempore.</p>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga fugit libero, tempore quidem illo veritatis veniam error alias placeat similique quos tempora excepturi molestias nihil vitae minima esse provident officia.</p>
-<br>
-<p>Lorem ipsum dolor</p>    
+    </form> 
 </div>
 </body>    
 </html>           
