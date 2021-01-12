@@ -15,8 +15,6 @@
   <li><a href="../index.php">Page d'Accueil</a></li>
   <li><a href="../visu/organisation.php">Les évènements</a></li>
   <li><a href="../visu/connexion.php">Inscription/ Connection</a></a></li>
-  <li><a href="../visu/paiement.php">Le Paiement</a></li>
-  <li class="select"><a href="../visu/qrcode.php">Qr code page</a></li>
       </ul>
 </nav>
 <div class= "margin-top">
