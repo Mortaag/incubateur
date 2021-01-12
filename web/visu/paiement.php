@@ -10,10 +10,10 @@
 <nav class= "nav-bar">
         <img src="../images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.php">
         <ul class="navigation">
-            <li class="select"><a href="../index.php">Page d'Accueil</a></li>
+            <li><a href="../index.php">Page d'Accueil</a></li>
             <li><a href="../visu/organisation.php">Les évènements</a></li>
             <li><a href="../visu/creation-compte.php">Inscription/ Connection</a></li>
-            <li><a href="../visu/paiement.php">Le Paiement</a></li>
+            <li class="select"><a href="../visu/paiement.php">Le Paiement</a></li>
         </ul>
     </nav>
 <div class= "margin-top">
