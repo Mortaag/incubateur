@@ -19,20 +19,18 @@ $_SESSION['age'] = '24' ;
     <title>The Tickets</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="shortcut icon" href="web/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <meta name="robots" content="noindex" />
 </head>
 <body>
     
-    <nav class= "nav-bar">
-        <img src="images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.php">
-        <ul>
-            <li class="select"><a href="index.php">Page d'Accueil</a></li>
-            <li><a href="visu/organisation.php">Les évènements</a></li>
-            <li> 
-            <a href="visu/creation-compte.php">Inscription/ Connection</a></a></li>
-            <li><a href="visu/paiement.php">Le Paiement</a></li>
-            <li><a href="visu/qrcode.php">Qr code page</a></li>
+<nav class= "nav-bar">
+        <img src="../images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.php">
+        <ul class="navigation">
+            <li class="select"><a href="../index.php">Page d'Accueil</a></li>
+            <li><a href="../visu/organisation.php">Les évènements</a></li>
+            <li><a href="../visu/creation-compte.php">Inscription/ Connection</a></li>
+            <li><a href="../visu/paiement.php">Le Paiement</a></li>
         </ul>
     </nav>
     <div class= "margin-top">
@@ -46,7 +44,7 @@ $_SESSION['age'] = '24' ;
             <div id="header" class="header">
          <h1>BIENVENUE</h1>  
          <br></br>     
-        <h1>PROFITE DE TA BILLETERIE EN LIGNE, AVEC THE TICKETS!</h1>
+        <h1>Profitez de votre billeterie en ligne, avec The Tickets!</h1>
 
 
     <h1>
@@ -67,7 +65,12 @@ $_SESSION['age'] = '24' ;
         </div>
         <p>Une vrai solution pour tout les types d'évènements: Concert, spectacle, séminaire etc...</p>
     </div> 
-</body>
+    </body>
+<footer>
+    <p> gjdgkdgkdk </p>
+</footer>
+
+
 </html>
 
 

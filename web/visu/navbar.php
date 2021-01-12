@@ -8,7 +8,6 @@
             <li> 
             <a href="../visu/creation-compte.php">Inscription/ Connection</a></a></li>
             <li><a href="../visu/paiement.php">Le Paiement</a></li>
-            <li><a href="../visu/qrcode.php">Qr code page</a></li>
         </ul>
     </nav>';
 

@@ -1409,3 +1409,120 @@
 		.date {
 			background-color: #000;
 		}
+
+
+
+
+
+		
+		.nav-bar {
+			position: fixed;
+			font-family: Verdana, fantasy;
+			background-color: white;
+			margin-left: -5px;
+			margin-top: -200px;
+			height: auto;
+		}
+
+		.select {
+			background-color: gold;
+			height: 60px;
+			display: block;
+		}
+
+		.margin-top{
+			margin-top: 200px;
+		}
+		h1 {
+			color: black;
+			text-align: center;
+			font-family: Verdana, monospace;
+		}
+		h2 { 
+			font-size: 1.2em;
+			text-align: center;
+		 }
+		
+		#page{
+			background-color: #FFFFFF;
+			width: 100%;
+			margin: 24px auto;
+			padding: -7px;
+			align-content : center;
+		}
+		#header{
+			padding: 3px ;
+			font-family: Verdana, monospace;
+			text-align: center;
+			align-content : center;
+			margin: auto;
+		}
+		.header{ 
+			font-family: Verdana, monospace;
+			background-color: white; 
+			color: #000000; 
+		}
+
+		.logo {
+			
+			height: 120px;
+			margin : auto ;
+			margin-left: 570px;
+			margin-bottom: 15px;
+		}
+		
+
+		
+		
+		li a:hover { 
+			background-color: #555;
+			color: white;
+			background-color: rgb(150, 147, 147);
+			height: 60px;
+		}
+		ul {
+			list-style-type: none;
+			margin: -10;
+			padding: 0;
+			overflow: hidden;
+			background-color: lightblue rgb(255, 254, 254);
+			top: 0;
+			width: 100%;
+		}
+		
+		li {
+			float: left;
+			border-right: 1px solid rgb(250, 248, 248);
+			width: 19%;
+		}
+		
+		li a {
+			display:flex;
+			text-align: center;
+			padding: 5px 104px;
+			text-decoration: none;
+			width: 100%;
+			color: #000;
+			text-decoration: none;
+			background: rgb(95, 159, 255)
+		}
+		
+		.active {
+			background-color: #3f0d2c;
+		}
+		
+		
+		li:last-child {
+			border-right: none;
+		}
+		
+		
+		
+		@media (min-width:800px) {
+			body {
+			   width:100%;
+			   
+		}
+		
+		
+	

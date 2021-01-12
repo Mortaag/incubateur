@@ -6,6 +6,15 @@
 <link rel="stylesheet" type="text/css" href="../css/style.css" />
 </head>
 <body>
+<nav class= "nav-bar">
+        <img src="../images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.php">
+        <ul class="navigation">
+            <li><a href="../index.php">Page d'Accueil</a></li>
+            <li class="select"><a href="../visu/organisation.php">Les évènements</a></li>
+            <li><a href="../visu/creation-compte.php">Inscription/ Connection</a></li>
+            <li><a href="../visu/paiement.php">Le Paiement</a></li>
+        </ul>
+    </nav>
 
 <?php 
 require_once 'navbar.php';
@@ -39,6 +48,12 @@ require_once 'navbar.php';
                
 </div>
 
+<?php
+$ma_bd=new
+PDO('mysql:host=localhost;dbname= c0_thetickets_bd','c0_thetickets','L3J6!;j7dA9+zBe');
 
+$n=$ma_bd->exec("INSERT INTO SecteurEntreprise");
+
+?>
 </body>
 </html>
