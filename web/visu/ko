@@ -1,0 +1,60 @@
+<form  action="interface-user.php"  method="post">
+  <div>
+      <p>
+      <label  for="Prénom">Prénom:</label>
+      <input  type="text"  id="prenom"  name="prénom" required>
+      </p>
+      <p> <?php 
+      if($_POST['prénom'] === 'prénom') {
+        if(empty($_POST['prénom'])) {
+        session_start();
+        $_SESSION['connecte'] = 1;
+        header('Location : /interface-user.php');
+        exit();
+        } else {
+          $erreur = 'Identifiants Incorrects';
+        }
+      }  ?>
+    </div>  
+  <div>
+      <label  for="nom">mot de passe :</label>
+      <input  type="text"  id="nom"  name="mdp" required>
+      <p> <?php if(empty($_POST['motdepasse'])) {
+      session_start();
+      $_SESSION['connecte'] = 1;
+      header('Location : /interface-user.php');
+      exit();
+      } else {
+        $erreur = 'Identifiants Incorrects';
+      }
+      ?> </p>
+    </div>
+    <div>
+      <label  for="courriel">Courriel :</label>
+        <input  type="email"  id="courriel"  name="user_email" required>
+        <p> <?php if(empty($_POST['user_email'])) { 
+          echo $tab['user_email'];} ?> </p>
+    </div>
+    <div  class="button">
+      <button  type="submit">Envoyer votre message</button>
+    </div>
+    
+
+    <form  action="interface-user.php"  method="post">
+  <div>
+      <p>
+      <label  for="Prénom">Prénom:</label>
+      <input  type="text"  id="prenom"  name="username" required>
+      </p>
+      <p> <?php 
+      if($_POST['Prénom'] === 'username') {
+        if(empty($_POST['Prénom'])) {
+        session_start();
+        $_SESSION['connecte'] = 1;
+        header('Location : /interface-user.php');
+        exit();
+        } else {
+          $erreur = 'Identifiants Incorrects';
+        }
+      }  ?>
+    </div>  

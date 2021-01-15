@@ -1,4 +1,6 @@
-
+<?php 
+ session_start();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,6 +14,8 @@
 
 <?php 
 require_once 'navbar.php';
+
+
 ?>
 <div class= "margin-top">
 
@@ -24,61 +28,20 @@ require_once 'navbar.php';
     <a href="connexion.php">
         <img src="../images/connexion_inscription.jpg" alt="image de connexion" class="connexion" href="connection.php">
 </a>
-<?php 
 
-    $username=$_POST['username'];
-    $motdepasse=$_POST['mdp'];
-    $email=$_POST['user_email'];
-    $erreur = null;
+<form method=post action="connexion2.php">
 
- ?>
+Email : <input type=email name=email>
+Mot de passe : <input type=password name=motdepasse>
+<button type="submit"> Créer</button>
+
+</form>
+
+
+
+
+
 <body>
-<form  action="interface-user.php"  method="post">
-  <div>
-      <p>
-      <label  for="Prénom">Prénom:</label>
-      <input  type="text"  id="prenom"  name="username" required>
-      </p>
-      <p> <?php 
-      if($_POST['Prénom'] === 'username') {
-        if(empty($_POST['Prénom'])) {
-        session_start();
-        $_SESSION['connecte'] = 1;
-        header('Location : /interface-user.php');
-        exit();
-        } else {
-          $erreur = 'Identifiants Incorrects';
-        }
-      }  ?>
-    </div>  
-  <div>
-      <label  for="nom">mot de passe :</label>
-      <input  type="text"  id="nom"  name="mdp" required>
-      <p> <?php 
-      if($_POST['motdepasse'] === 'mdp') {
-        if(empty($_POST['mdp'])) {
-        session_start();
-        $_SESSION['connecte'] = 1;
-        header('Location : /interface-user.php');
-        exit();
-        } else {
-          $erreur = 'Identifiants Incorrects';
-        }
-      }
-      ?> 
-      </p>
-    </div>
-    <div>
-      <label  for="courriel">Courriel :</label>
-        <input  type="email"  id="courriel"  name="user_email" required>
-        <p> <?php 
-        
-          ?> </p>
-    </div>
-    <div  class="button">
-      <button  type="submit">Envoyer votre message</button>
-    </div>
-    </form> 
-</div>
+
 </body>    
 </html>           

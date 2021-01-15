@@ -5,9 +5,16 @@
         <ul>
             <li class="select"><a href="../index.php">Page d\'Accueil</a></li>
             <li><a href="../visu/organisation.php">Les évènements</a></li>
-            <li> 
-            <a href="../visu/creation-compte.php">Inscription/ Connection</a></a></li>
-        </ul>
-    </nav>';
+            <li>';
+            if(isset($_SESSION['idUtilisateur']))
+{
+    echo'<a href="../visu/interface-user.php">Mon compte</a></a></li>';
+}
+
+else {
+    echo '<a href="../visu/creation-compte.php">Inscription</a></a></li>';
+    echo '<li><a href="../visu/connexion.php">Connexion</a></a></li>';
+}
+       
 
 ?>

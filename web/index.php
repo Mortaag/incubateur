@@ -1,14 +1,6 @@
 <?php
 
-
-
 session_start();
-
-$_SESSION['user'] = 'user';
-$_SESSION['mot_de_passe'] = 'Doe';
-$_SESSION['age'] = '24' ;
-
-
 
 ?>
 
@@ -19,19 +11,15 @@ $_SESSION['age'] = '24' ;
     <title>The Tickets</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="shortcut icon" href="web/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css" /> -->
     <meta name="robots" content="noindex" />
 </head>
 <body>
     
-<nav class= "nav-bar">
-        <img src="../images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.php">
-        <ul class="navigation">
-            <li class="select"><a href="../index.php">Page d'Accueil</a></li>
-            <li><a href="../visu/organisation.php">Les évènements</a></li>
-            <li><a href="../visu/creation-compte.php">Inscription/ Connection</a></li>
-        </ul>
-    </nav>
+<?php 
+require_once 'visu/navbar.php';
+?>
+
     <div class= "margin-top">
         <p>
         <?php 

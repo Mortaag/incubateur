@@ -63,9 +63,6 @@
         </div>
         <div id="content">
             <h2><a href="..\index.php"> Home </a></h2>
-
-            <?php echo 'Merci '. $_POST['Nom']  . $_POST['Prenom'] . ' de faire un compte sur TheTickets.fr ! 
-            Nous vous avons envoyé un mail à l\'adresse suivante :' . $_POST['mail'] . ''?>
             <h3>Cette page est l'interface utilisateur, ou la partie que l'utilisateur pourra accéder une fois la connexion à son compte effectué. </h2>
             <p>Cette page est produite par le fichier <b>connection.php</b>, présent dans le dossier <b>visu</b>.</p>
             <p>Cliquez sur le logo pour accéder à l'accueil.</p>
@@ -74,6 +71,6 @@
             <p>Powered by <a href="https://www.ispconfig.org">ISPConfig</a></p>
         </div>
     </div>
-    
+    <a href="deconnexion.php" class="href">Se déconnecter</a>
 </body>
 </html>

@@ -7,6 +7,12 @@
 </head>
 <body>
 
+
+<?php 
+
+require_once 'navbar.php';
+
+?>
 <nav class= "nav-bar">
         <img src="../images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.php">
         <ul class="navigation">
