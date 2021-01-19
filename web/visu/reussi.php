@@ -16,11 +16,6 @@ require_once "navbar.php"
     <li><a href="../visu/connexion.php">Inscription/ Connection</a></a></li>
   </ul>
 </nav> -->
-<div class= "margin-top">
-
-  <div id="page">
-    <div id="header" class="header">
-       <h1>Vous avez procédé au paiement. Vous avez désormais créé votre évènement !</h1>
-</div>
+<p>Vous avez payé</p>
 </body>
 </html>

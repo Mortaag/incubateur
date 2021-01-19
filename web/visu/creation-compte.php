@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="web/favicon.ico" />
     <!-- <link rel="stylesheet" type="text/css" href="..\css\style.css" /> -->
 </head>
+
 <body>
 <?php 
 require_once 'navbar.php';

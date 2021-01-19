@@ -1,169 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 body {
-    color: #444444;
-    background-color: white;
-    font-family: 'Trebuchet MS', sans-serif;
-    font-size: 80%;
-}
-.nav-bar {
-    position: fixed;
-    font-family: Verdana, fantasy;
-    background: rgb(255, 255, 255);
-    margin-left: auto;
-    width: 100%;
-    
-}
-.margin-top{
-    background-color: black;
-}
-h1 {
-    color: black;
-    text-align: center;
-    font-family: Verdana, monospace;
-}
-h2 { 
-    font-size: 1.2em;
-    text-align: center;
- }
-
-.page{
-    background-color: #a6eaff;
-    width: 100%;
-    height: 2100px;
-    align-content : center;
-}
-#header{
-    padding: 3px ;
-    font-family: Verdana, monospace;
-    text-align: center;
-    align-content : center;
-    margin: auto;
-}
-.header{ 
-    font-family: Verdana, monospace;
-     
-    color: #000000; 
-}
-#content {
-    padding: 4px 0 24px 0;
-}
-#footer {
-    color: #666666;
-    background: #f9f9f9;
-    padding: 10px 20px;
-    border-top: 5px #efefef solid;
-    font-size: 0.8em;
-    text-align: center;
-}
-#footer a {
-    color: #999999;
-}
-
-.logo {
-    
-    height: 120px;
-    margin : auto ;
-    margin-left: 570px;
-    margin-bottom: 15px;
-}
-
-
-ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
+    font-family: 'Roboto Slab', serif;
 }
 
-
-li a:hover { 
-    background-color: #555;
-    color: white;
-    background-color: rgb(150, 147, 147);
-    height: 30px;
-}
-ul {
-    list-style-type: none;
-    margin: -10;
-    padding: 0;
-    overflow: hidden;
-    background-color: lightblue rgb(255, 254, 254);
-    top: 0;
+section {
     width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background: url(concert_evenement.jpg);
 }
 
-li {
+section .leftBox {
+    width: 50%;
+    height: 100%;
     float: left;
-    border-right: 1px solid rgb(250, 248, 248);
-    width: 25%;
+    padding: 50px;
+    padding-top: 200px;
+    box-sizing: border-box;
+}
+
+section .leftBox .content {
+    color: rgb(255, 255, 255);
+    background: rgb(64, 132, 219);
+    padding: 40px;
+    transition: .5s;
+}
+
+section .leftBox .content:hover {
+    background: #1947ac;
+}
+
+section .leftBox .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+section .leftBox .content p {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+section .events {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    float: right;
+    box-sizing: border-box;
+}
+
+section .events ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+section .events ul li {
+    list-style: none;
+    background: #fff;
+    box-sizing: border-box;
+    height: 200px;
+    /*margin: 15px 0;*/
+}
+
+section .events ul li .time {
+    position: relative;
+    padding: 20px;
+    background: rgb(64, 132, 219);
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    float: left;
     text-align: center;
+    transition: .5s;
 }
 
-li a {
-    display: block;
-    padding: 5px 104px;
+section .events ul li:hover .time {
+    background: #1947ac;
+}
+
+section .events ul il .time h2 {
+    position: absolute;
+    margin: 0;
+    padding: 0%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 60px;
+}
+
+section .events ul li .time h2 span {
+    font-size: 30px;
+}
+
+section .events ul li .details {
+    padding: 20px;
+    background: #fff;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100%;
+    float: left;
+}
+
+section .events ul li .details h3 {
+    position: relative;
+    margin: 0%;
+    padding: 0%;
+    font-size: 22px;
+}
+
+section .events ul li .details p {
+    position: relative;
+    margin: 10px 0 0;
+    padding: 0%;
+    font-size: 16px;
+}
+
+section .events ul li .details a {
+    display: inline-block;
     text-decoration: none;
-    width: 25%;
-    color: #000;
-    text-decoration: none;
+    padding: 10px 15px;
+    margin-top: 3%;
+    font-size: 18px;
+    transition: .5s;
 }
 
-.active {
-    background-color: #3f0d2c;
+section .events ul li .details a:hovet {
+    background: #e91e63;
+    color: #fff;
+    border-color: #e91e63;
 }
 
-
-li:last-child {
-    border-right: none;
+#NavCenter {
+    padding-right: 700px;
 }
 
-.select {
-    background-color: gold;
-    height: 40px;
-}
-
-@media (min-width:800px) {
-    body {
-       width:100%;
-       
-}
-}
-
-.boite {
-        text-align : center;
-        padding : 1em;
-        border : 0.9em solid rgb(255, 2, 2);
-        width  : 13em;
-        height : 13em;
-        border-radius: 100%;
-        margin: auto;
-      }
-.imagepaiement{
-        width:100%;
-        height: auto;
-    }   
-.qrcode{
-    width: 600px;
-    height: auto;
-    align-items: center;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.navigation{
-    display: flex;
-    justify-content: space-around;
-}
-.bouton_payer{
-    background-color: #356aab;
-    padding: 1rem 2rem 1rem 2rem;
-    text-decoration: none;
-    font-weight: bold;
+nav .nav-link {
     color: white;
-    border-radius: 1rem;
 }
-.bouton_payer:hover{
-    background-color: yellow;
+
+#buttonCTA {
+    position: relative;
+    margin-left: 840PX;
+    background-color: red;
+    color: white;
+    padding: 32px 16px;
+    border-radius: 8px;
+}
+
+#login {
+    background-color: #e7e7e7;
     color: black;
+    border-radius: 8px;
+}
+
+#restantes {
+    position: relative;
+    padding-right: 10px;
+    padding-top: 20px;
+    float: right;
+    font-weight: bold;
+}
+
+@media (min-width: 480px) and (max-width: 780px) {
+    section {
+        height: 100%;
+        width: 100%;
+        background-position: center;
+    }
+    section.leftBox {
+        width: 100%;
+        height: auto;
+        float: none;
+        padding: 20px;
+    }
+    section .events {
+        width: 100px;
+        height: auto;
+        background: transparent;
+        float: none;
+    }
+    section .leftBox .content {
+        padding: 20px;
+    }
+    section .leftBox .content h1 {
+        font-size: 30px;
+    }
+    section .events ul {
+        position: relative;
+        transform: translateY(0px);
+        padding: 0 20px 20px;
+    }
+    section .events ul li {
+        height: auto;
+        background: rgba(255, 255, 255, .09);
+    }
+    section .events ul li .time {
+        width: 80px;
+        height: 80px;
+        padding: 0;
+    }
+    section .events ul li .time h2 {
+        font-size: 30px;
+        line-height: 24px;
+    }
+    section .events il li .time h2 span {
+        font-size: 20px;
+    }
+    section .events ul li .details {
+        width: 100%;
+        float: none;
+        padding-left: 100px;
+        background: transparent;
+    }
+    section .events ul li .details a {
+        padding: 5px 10px;
+    }
+    nav {
+        width: 100%;
+    }
+}
+
+#vald {
+    width: 100%;
+    height: 600px;
 }
