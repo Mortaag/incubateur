@@ -2,6 +2,19 @@
 
 session_start();
 
+
+if(isset($_SESSION['idUtilisateur']))
+{
+	$bd=new PDO('mysql:host=localhost;dbname=c0_thetickets_BD','c0_thetickets','L3J6!;j7dA9+zBe');
+	$req=$bd->query("SELECT * FROM Utilisateurs WHERE idUtilisateur=".$_SESSION['idUtilisateur']);
+	$utilisateur=$req->fetch();
+}
+else
+{
+	header('Location:erreur.php'); // Aucun accès
+}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -79,11 +92,11 @@ require_once 'navbar.php';
 
         <div class="col-12">
             <label for="inputAddress" class="form-label">Pays</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="Pays">
+            <input type="text" class="form-control" id="inputAddress" placeholder="Votre pays" name="Pays">
         </div>
 
         <div class="col-12">
-            <a class="btn btn-primary" href="creationterminer.html" role="button">Créer l'évenement</a>
+            <button class="btn btn-primary" type="submit"> Créer votre évènement</button>
         </div>
 
     </form>

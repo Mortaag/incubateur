@@ -11,5 +11,6 @@
     require_once 'navbar.php'
 
     ?>
+    <p>Cette page n'est accessible qu'aux utilisateurs connectés.</p>
 </body>
 </html>

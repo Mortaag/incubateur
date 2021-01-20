@@ -11,7 +11,7 @@ $utilisateur=$req->fetch();
 if($utilisateur) // L'utilisateur existe avec ce mot de passe !
 {
 	$_SESSION['idUtilisateur']=$utilisateur['idUtilisateur'];
-	header('Location:../index.php');
+	header('Location:interface-user.php');
 }
  else // L'utilisateur n'existe pas et/ou le mot de passe n'est pas bon 
 {
