@@ -4,13 +4,18 @@ session_start();
 
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html>
+
 <head>
-<title>The Tickets</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <!-- <link rel="stylesheet" type="text/css" href="../css/style4.css"> -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>The Tickets</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style4.css">
 </head>
 <body>
 
@@ -54,7 +59,7 @@ require_once 'navbar.php';
 
           Nom de l'évènement<input type='text' name='Nom'>
           Description de l'évènement<input type='text' name='Description'>
-          Nombre de place<input type='number' name='NbPlaces'>
+          Nombre de place<input type="number" name='NbPlaces'>
         
 
         <div class="col-12">
