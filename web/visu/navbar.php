@@ -6,7 +6,7 @@
  </a>
  <ul class="nav justify-content-center">
      <li class="nav-item">
-         <a class="nav-link active" href="index.html" id="Home">ACCUEIL</a>
+         <a class="nav-link active" href="index.php" id="Home">ACCUEIL</a>
      </li>
      <li class="nav-item" id="NavCenter">
          <a class="nav-link" href="visu/organisation.php" id="Home">ORGANISER VOTRE EVENEMENT</a>

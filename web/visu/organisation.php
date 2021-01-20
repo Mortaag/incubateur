@@ -9,8 +9,8 @@ session_start();
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <title>The Tickets</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="style4.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/style4.css"> -->
 </head>
 <body>
 
@@ -21,61 +21,62 @@ require_once 'navbar.php';
 <div class= "margin-top">
   <?php 
 
-  if(isset($_SESSION['IdUtilisateur'])) {
+//   if(isset($_SESSION['IdUtilisateur'])) {
 
-    echo" <div id='page'>
-    <div id='header' class='header'>
-  <h1>ICI, TU PEUX CREER ET PERSONNALISER TA BILLETERIE EN LIGNE ET LA GERER FACILEMENT!</h1>
+//     echo" <div id='page'>
+//     <div id='header' class='header'>
+//   <h1>ICI, TU PEUX CREER ET PERSONNALISER TA BILLETERIE EN LIGNE ET LA GERER FACILEMENT!</h1>
 
-  <form action='organisation2.php' method='post'>
-    Nom de l'évènement<input type='text' name='Nom'>
-    Description de l'évènement<input type='text' name='Description'>
-    Nombre de place<input type='number' name='NbPlaces'>
-    <button type='submit'>Payer</button>
-  </form>";
-  } else {
-    echo "<div id='page'>
-    <div id='header' class='header'>
-  <h1>ICI, TU PEUX CREER ET PERSONNALISER TA BILLETERIE EN LIGNE ET LA GERER FACILEMENT!</h1>
+//   <form action='organisation2.php' method='post'>
+//     Nom de l'évènement<input type='text' name='Nom'>
+//     Description de l'évènement<input type='text' name='Description'>
+//     Nombre de place<input type='number' name='NbPlaces'>
+//     <button type='submit'>Payer</button>
+//   </form>";
+//   } else {
+//     echo "<div id='page'>
+//     <div id='header' class='header'>
+//   <h1>ICI, TU PEUX CREER ET PERSONNALISER TA BILLETERIE EN LIGNE ET LA GERER FACILEMENT!</h1>
 
-  <form action='organisation2.php' method='post'>
-    Nom de l'évènement<input type='text' name='Nom'>
-    Description de l'évènement<input type='text' name='Description'>
-    Nombre de place<input type='number' name='NbPlaces'>
-    <button type='submit'>Payer</button>
-  </form>";
-  };
+//   <form action='organisation2.php' method='post'>
+//     Nom de l'évènement<input type='text' name='Nom'>
+//     Description de l'évènement<input type='text' name='Description'>
+//     Nombre de place<input type='number' name='NbPlaces'>
+//     <button type='submit'>Payer</button>
+//   </form>";
+//   };
 
   ?>
 <body>
 
     <br><br>
-    <form action=organisation2.php class="row g-3 container mx-auto" method="post">
+    <form action=organisation2.php class="row g-3 container mx-auto" method="post" class="form-label">
+
+          Nom de l'évènement<input type='text' name='Nom'>
+          Description de l'évènement<input type='text' name='Description'>
+          Nombre de place<input type='number' name='NbPlaces'>
+        
+
         <div class="col-12">
             <label for="inputAddress" class="form-label">Adresse de l'évenement</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="Adresse">
         </div>
 
         <div class="col-md-6">
             <label for="inputCity" class="form-label">Ville de l'événement</label>
-            <input type="text" class="form-control" id="inputCity">
+            <input type="text" class="form-control" id="inputCity" name="Ville">
         </div>
-        <div class="col-md-4">
-            <label for="inputState" class="form-label">Departement de l'évenement</label>
-            <select id="inputState" class="form-select">
-            <option selected>Choosis...</option>
-            <option>01 - Ain - Bourg-en-bresse</option>
-            <option>02 - Aisne - Laon</option>
-            <option>03 - Allier - Moulins</option>
-            <option>04 - Alpes-de-Haute-Provence - Digne-les-bains</option>
-            <option>05 - Hautes-alpes - Gap</option>
-
-          </select>
-        </div>
+        
         <div class="col-md-2">
             <label for="inputZip" class="form-label">Code postal</label>
-            <input type="text" class="form-control" id="inputZip">
+            <input type="text" class="form-control" id="inputZip" name="CodePostal">
         </div>
+
+        <div class="col-12">
+            <label for="inputAddress" class="form-label">Pays</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="Pays">
+        </div>
+
         <div class="col-12">
             <a class="btn btn-primary" href="creationterminer.html" role="button">Créer l'évenement</a>
         </div>
