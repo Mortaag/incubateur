@@ -29,12 +29,6 @@ require_once 'visu/navbar.php';
 
 <?php 
 $bd=new PDO('mysql:host=localhost;dbname=c0_thetickets_BD','c0_thetickets','L3J6!;j7dA9+zBe');
-$res=$bd->query("SELECT * FROM Dates JOIN Evenements USING(idEvenement) WHERE Date>CURRENT_DATE() ORDER Date LIMIT 3");
-foreach($res as $ligne)
-{
-	echo "Evénement : ",$ligne['Description'],' - Nb places : ',$ligne['NbPlaces'];
-	echo "<a href=date-evenement.php?idDate=",$ligne['idDate'],">Plus d'infos</a>";
-}
 ?>
          <div class="leftBox">
             <div class="content">
@@ -46,43 +40,27 @@ foreach($res as $ligne)
         </div>
         <div class="events">
             <ul>
-                <li>
+<?php
+$mois=array('01'=>'Janvier','03'=>'Mars');
+$res=$bd->query("SELECT * FROM Dates JOIN Evenements USING(idEvenement) WHERE Date>CURRENT_DATE() ORDER BY Date LIMIT 3");
+foreach($res as $ligne)
+{
+    $req2=$bd->query("SELECT COUNT(*) AS nb FROM Tickets WHERE idDate=".$ligne['idDate']);
+    $nb=$req2->fetch();
+    echo'                <li>
                     <div class="time">
-                        <h2>06<br><span>Mars</span></h2>
+                        <h2>',substr($ligne['Date'],8,2),'<br><span>',$mois[substr($ligne['Date'],5,2)],'</span></h2>
                     </div>
                     <div class="details">
-                        <h3>Vald en concert!!</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt eligendi id aliquam corrupti explicabo doloribus doloremque!</p>
-                        <p class="text-capitalize" id="restantes">Place restantes : 12</p>
-                        <a href="Vald.html"><button type="button" class="btn btn-outline-primary">Plus D'info</button></a>
+                        <h3>',$ligne['Nom'],'</h3>
+                        <p>',$ligne['Description'],'</p>
+                        <p class="text-capitalize" id="restantes">Places restantes : ',($ligne['NbPlaces']-$nb['nb']),'</p>
+                        <a href="date.php?idDate=',$ligne['idDate'],'"><button type="button" class="btn btn-outline-primary">Plus D\'info</button></a>
                     </div>
                     <div style="clear: both;"></div>
-                </li>
-                <li>
-                    <div class="time">
-                        <h2>04<br><span>Janvier</span></h2>
-                    </div>
-                    <div class="details">
-                        <h3>Freeze Corleone en concert!!</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt eligendi id aliquam corrupti explicabo doloribus doloremque!
-                        </p>
-                        <p class="text-capitalize" id="restantes">Place restantes : 17</p>
-                        <a href="freeze.html"><button type="button" class="btn btn-outline-primary">Plus D'info</button></a>
-                    </div>
-                    <div style="clear: both;"></div>
-                </li>
-                <li>
-                    <div class="time">
-                        <h2>17<br><span>Avril</span></h2>
-                    </div>
-                    <div class="details">
-                        <h3>Lyonzon en concert!!</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt eligendi id aliquam corrupti explicabo doloribus doloremque!</p>
-                        <p class="text-capitalize" id="restantes">Place restantes : 7</p>
-                        <a href="lyonzon.html"><button type="button" class="btn btn-outline-primary">Plus D'info</button></a>
-                    </div>
-                    <div style="clear: both;"></div>
-                </li>
+                </li>';
+}
+?>
             </ul>
         </div> -->
     </section>

@@ -43,7 +43,7 @@ require_once 'navbar.php';
         <br><br><br><br><br><br>
         <h4 id="Left" id="black">Connectez-vous </h4>
             <div class="form-group">
-                <label for="exampleInputEmail1">Address Mail</label>
+                <label for="exampleInputEmail1">Adresse Mail</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name=email>
             </div>
             <div class="form-group">
@@ -53,7 +53,7 @@ require_once 'navbar.php';
             <button type="submit" class="btn btn-primary">Se connecter</button>
     </div>
 
-<button type="submit"> Créer</button>
+
 
 </form>
 
