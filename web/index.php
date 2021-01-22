@@ -2,7 +2,10 @@
 
 session_start();
 
+
+
 ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -23,7 +26,17 @@ require_once 'visu/navbar.php';
 ?>
 
 <section>
-        <div class="leftBox">
+
+<?php 
+$bd=new PDO('mysql:host=localhost;dbname=c0_thetickets_BD','c0_thetickets','L3J6!;j7dA9+zBe');
+$res=$bd->query("SELECT * FROM Dates JOIN Evenements USING(idEvenement) WHERE Date>CURRENT_DATE() ORDER Date LIMIT 3");
+foreach($res as $ligne)
+{
+	echo "Evénement : ",$ligne['Description'],' - Nb places : ',$ligne['NbPlaces'];
+	echo "<a href=date-evenement.php?idDate=",$ligne['idDate'],">Plus d'infos</a>";
+}
+?>
+         <div class="leftBox">
             <div class="content">
                 <h1>Evenement</h1>
                 <p>BIENVENUE. The Tickets est une billetterie en ligne qui vous permet d'organiser simplement des évènements qui vous correspondent. Créez vous-même des moments et des évènements inoubliables pour tisser des liens forts avec votre public.
@@ -71,7 +84,7 @@ require_once 'visu/navbar.php';
                     <div style="clear: both;"></div>
                 </li>
             </ul>
-        </div>
+        </div> -->
     </section>
     <footer class="position fixed-bottom container py-3 bg-light">
         <div class="row">

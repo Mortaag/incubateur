@@ -39,30 +39,30 @@ require_once 'navbar.php';
 <div class= "margin-top">
   <?php 
 
-//   if(isset($_SESSION['IdUtilisateur'])) {
+  if(isset($_SESSION['IdUtilisateur'])) {
 
-//     echo" <div id='page'>
-//     <div id='header' class='header'>
-//   <h1>ICI, TU PEUX CREER ET PERSONNALISER TA BILLETERIE EN LIGNE ET LA GERER FACILEMENT!</h1>
+    echo" <div id='page'>
+    <div id='header' class='header'>
+  <h1>ICI, TU PEUX CREER ET PERSONNALISER TA BILLETERIE EN LIGNE ET LA GERER FACILEMENT!</h1>
 
-//   <form action='organisation2.php' method='post'>
-//     Nom de l'évènement<input type='text' name='Nom'>
-//     Description de l'évènement<input type='text' name='Description'>
-//     Nombre de place<input type='number' name='NbPlaces'>
-//     <button type='submit'>Payer</button>
-//   </form>";
-//   } else {
-//     echo "<div id='page'>
-//     <div id='header' class='header'>
-//   <h1>ICI, TU PEUX CREER ET PERSONNALISER TA BILLETERIE EN LIGNE ET LA GERER FACILEMENT!</h1>
+  <form action='organisation2.php' method='post'>
+    Nom de l'évènement<input type='text' name='Nom'>
+    Description de l'évènement<input type='text' name='Description'>
+    Nombre de place<input type='number' name='NbPlaces'>
+    <button type='submit'>Payer</button>
+  </form>";
+  } else {
+    echo "<div id='page'>
+    <div id='header' class='header'>
+  <h1>ICI, TU PEUX CREER ET PERSONNALISER TA BILLETERIE EN LIGNE ET LA GERER FACILEMENT!</h1>
 
-//   <form action='organisation2.php' method='post'>
-//     Nom de l'évènement<input type='text' name='Nom'>
-//     Description de l'évènement<input type='text' name='Description'>
-//     Nombre de place<input type='number' name='NbPlaces'>
-//     <button type='submit'>Payer</button>
-//   </form>";
-//   };
+  <form action='organisation2.php' method='post'>
+    Nom de l'évènement<input type='text' name='Nom'>
+    Description de l'évènement<input type='text' name='Description'>
+    Nombre de place<input type='number' name='NbPlaces'>
+    <button type='submit'>Payer</button>
+  </form>";
+  };
 
   ?>
 <body>
