@@ -22,11 +22,11 @@
         </div>
         <br><br><br><br><br><br><br><br>
         <main role="main" class=" inner cover">
-            <h1 class="cover-heading">MERCI POUR VOTRE ACHAT!</h1>
+            <h1 class="cover-heading">MERCI D'AVOIR CREER CETTE EVENEMENT!</h1>
             <br>
-            <p class="lead">Vous pouvez recuperer votre Qr Code dès maintenant ici ou à votre adresse email</p>
+            <p class="lead">Vous recevrer des informations sur les participants dès qu'une demande sera effectuer</p>
             <br>
-            <p>⚠️Nous vous conseillons de prendre en photo votre Qr code ⚠️</p>
+            <p>⚠️ Ce QR code permettra d'entrer dans votre évenement. Garder le précieusement ⚠️</p>
             <br>
             <img src="qr_code.png" width="300 " height="300 " alt="qr code ">
         </main>
