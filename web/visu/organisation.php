@@ -22,7 +22,7 @@ else
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta charset="utf-8" lang="fr">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -39,41 +39,49 @@ require_once 'navbar.php';
 <div class= "margin-top">
   <?php 
 
-  if(isset($_SESSION['IdUtilisateur'])) {
+//   if(isset($_SESSION['IdUtilisateur'])) {
 
-    echo" <div id='page'>
-    <div id='header' class='header'>
-  <h1>ICI, TU PEUX CREER ET PERSONNALISER TA BILLETERIE EN LIGNE ET LA GERER FACILEMENT!</h1>
+//     echo" <div id='page'>
+//     <div id='header' class='header'>
+//   <h1>ICI, TU PEUX CREER ET PERSONNALISER TA BILLETERIE EN LIGNE ET LA GERER FACILEMENT!</h1>
 
-  <form action='organisation2.php' method='post'>
-    Nom de l'évènement<input type='text' name='Nom'>
-    Description de l'évènement<input type='text' name='Description'>
-    Nombre de place<input type='number' name='NbPlaces'>
-    <button type='submit'>Payer</button>
-  </form>";
-  } else {
-    echo "<div id='page'>
-    <div id='header' class='header'>
-  <h1>ICI, TU PEUX CREER ET PERSONNALISER TA BILLETERIE EN LIGNE ET LA GERER FACILEMENT!</h1>
+//   <form action='organisation2.php' method='post'>
+//     Nom de l'évènement<input type='text' name='Nom'>
+//     Description de l'évènement<input type='text' name='Description'>
+//     Nombre de place<input type='number' name='NbPlaces'>
+//     <button type='submit'>Payer</button>
+//   </form>";
+//   } else {
+//     echo "<div id='page'>
+//     <div id='header' class='header'>
+//   <h1>ICI, TU PEUX CREER ET PERSONNALISER TA BILLETERIE EN LIGNE ET LA GERER FACILEMENT!</h1>
 
-  <form action='organisation2.php' method='post'>
-    Nom de l'évènement<input type='text' name='Nom'>
-    Description de l'évènement<input type='text' name='Description'>
-    Nombre de place<input type='number' name='NbPlaces'>
-    <button type='submit'>Payer</button>
-  </form>";
-  };
+//   <form action='organisation2.php' method='post'>
+//     Nom de l'évènement<input type='text' name='Nom'>
+//     Description de l'évènement<input type='text' name='Description'>
+//     Nombre de place<input type='number' name='NbPlaces'>
+//     <button type='submit'>Payer</button>
+//   </form>";
+//   };
 
   ?>
 <body>
 
     <br><br>
     <form action=organisation2.php class="row g-3 container mx-auto" method="post" class="form-label">
-
-          Nom de l'évènement<input type='text' name='Nom'>
-          Description de l'évènement<input type='text' name='Description'>
-          Nombre de place<input type="number" name='NbPlaces'>
-        
+    <div class="col-12">
+            <label for="inputAddress" class="form-label">Nom de l'évènement</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Nom de l'évènement" name="Nom">
+          </div>
+          <div class="col-12">
+          <label for="inputAddress" class="form-label">Description de l'évènement</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Description" name="Description">
+          
+          </div>
+          <div class="col-12"><label for="inputAddress" class="form-label">Nombre de places</label>
+            <input type="number" class="form-control" id="inputAddress" placeholder="Description" name="NbPlace">
+          
+    </div>
 
         <div class="col-12">
             <label for="inputAddress" class="form-label">Adresse de l'évenement</label>
@@ -87,7 +95,7 @@ require_once 'navbar.php';
         
         <div class="col-md-2">
             <label for="inputZip" class="form-label">Code postal</label>
-            <input type="text" class="form-control" id="inputZip" name="CodePostal">
+            <input type="number" class="form-control" id="inputZip" name="CodePostal">
         </div>
 
         <div class="col-12">
@@ -95,6 +103,14 @@ require_once 'navbar.php';
             <input type="text" class="form-control" id="inputAddress" placeholder="Votre pays" name="Pays">
         </div>
 
+        <div class="col-12">
+            <label for="inputAddress" class="form-label">Date</label>
+            <input type="date" class="form-control" id="inputAddress" placeholder="Date de l'évènement" name="Date">
+        </div>
+        <div class="col-12">
+            <label for="inputAddress" class="form-label">Prix</label>
+            <input type="price" class="form-control" id="inputAddress" placeholder="€" name="Prix">
+        </div>
         <div class="col-12">
             <button class="btn btn-primary" type="submit"> Créer votre évènement</button>
         </div>

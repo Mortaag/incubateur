@@ -9,7 +9,7 @@
 
 <nav class= "nav-bar">
 
-<img src="../images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="index.php">
+<img src="../images/the_tickets.png" alt="Logo de The TheTickets" class="logo" href="../index.php">
 <ul>
   
   <li><a href="../index.php">Page d'Accueil</a></li>

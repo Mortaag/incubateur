@@ -20,7 +20,7 @@ require_once 'navbar.php';
 
 
 
-<form class="credit-card">
+<form class="credit-card" action=reussi.php>
         <div class="form-header">
             <h4 class="title">Credit card detail</h4>
         </div>

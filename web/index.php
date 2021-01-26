@@ -41,7 +41,7 @@ $bd=new PDO('mysql:host=localhost;dbname=c0_thetickets_BD','c0_thetickets','L3J6
         <div class="events">
             <ul>
 <?php
-$mois=array('01'=>'Janvier','03'=>'Mars');
+$mois=array('01'=>'Janvier', '02'=>'Février', '03'=>'Mars', '04' => 'Avril', '05' => 'Mai', '06' => 'Juin', '07' => 'Juillet', '08' => 'Aout', '09' => 'Septembre', '10' => 'Octobre', '11' => 'Novembre', '12' =>'Décembre');
 $res=$bd->query("SELECT * FROM Dates JOIN Evenements USING(idEvenement) WHERE Date>CURRENT_DATE() ORDER BY Date LIMIT 3");
 foreach($res as $ligne)
 {
