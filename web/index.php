@@ -17,7 +17,7 @@ session_start();
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>The Tickets</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
     
@@ -55,7 +55,7 @@ foreach($res as $ligne)
                         <h3>',$ligne['Nom'],'</h3>
                         <p>',$ligne['Description'],'</p>
                         <p class="text-capitalize" id="restantes">Places restantes : ',($ligne['NbPlaces']-$nb['nb']),'</p>
-                        <a href="date.php?idDate=',$ligne['idDate'],'"><button type="button" class="btn btn-outline-primary">Plus D\'info</button></a>
+                        <a href="visu/date.php?idDate=',$ligne['idDate'],'"><button type="button" class="btn btn-outline-primary">Plus D\'info</button></a>
                     </div>
                     <div style="clear: both;"></div>
                 </li>';
@@ -89,7 +89,7 @@ foreach($res as $ligne)
                 <br>
                 <h5>DEV</h5>
                 <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="https://github.com/BijotVictor">Victor Bijot</a></li>
+                    <li><a target=_blank class="text-muted" href="https://github.com/BijotVictor">Victor Bijot</a></li>
                 </ul>
             </div>
         </div>

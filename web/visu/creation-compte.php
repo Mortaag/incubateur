@@ -35,27 +35,21 @@ require_once 'navbar.php';
         <br><br><br><br><br><br>
         <h4 id="Left" id="black">Inscrivez vous gratuitement </h4>
         <form id="black">
-            <div class="form-group">
-                <label for="exampleInputEmail1">Address Mail</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Mot de passe</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-            <button type="submit" class="btn btn-primary">S'inscrire</button>
-        </form>
+            <div class="form-group" class="form-group">
+                
+            
+        
     </div>
-        Nom :<input type="text" name="Nom" class=form-group>
-        Prénom :<input type="text" name="Prenom" class=form-group> 
-        Mot de passe :<input type="password" name="MotDePasse" class=form-group>
-        Adresse Mail : <input type="email" name="AdressEmail" class=form-group>
-        Adresse : <input type="text" name="Adresse" class=form-group>
-        Code Postal : <input type="text" name="CodePostal" pattern="[0-9]{5}" class=form-group>
-        Ville : <input type="text" name="Ville" class=form-group>
-        Pays : <input type="text" name="Pays" class=form-group>
+        Nom :<input type="text" name="Nom" class=form-control>
+        Prénom :<input type="text" name="Prenom" class=form-control> 
+        Mot de passe :<input type="password" name="MotDePasse" class=form-control>
+        Adresse Mail : <input type="email" name="AdressEmail" class=form-control>
+        Adresse : <input type="text" name="Adresse" class=form-control>
+        Code Postal : <input type="text" name="CodePostal" pattern="[0-9]{5}" class=form-control>
+        Ville : <input type="text" name="Ville" class=form-control>
+        Pays : <input type="text" name="Pays" class=form-control>
         <button type="submit">Créer un compte</button>
-
+        </form>
 
 
 </form>

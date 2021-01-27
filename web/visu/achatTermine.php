@@ -16,8 +16,11 @@
     <div class= "margin-top">
         <p>
         <?php 
-        
-       
+        $bd=new PDO('mysql:host=localhost;dbname=c0_thetickets_BD','c0_thetickets','L3J6!;j7dA9+zBe');
+
+        $bd->exec("INSERT INTO `Utilisateurs` ( `AdressEmail`, `Nom`, `Prenom`) VALUES (" . $bd->quote($_POST['AdressEmail']) . "," . $bd->quote($_POST['Nom']) . "," . $bd->quote($_POST["Prenom"]) . " );");
+        $idUtilisateur= $bd->lastInsertId();
+        $bd->exec("INSERT INTO `Tickets` ( `idDate`, `idUtilisateur`, `Prix`, `Nom`, `Prenom`) VALUES (" . $bd->quote($_POST['idDate']) . "," .$idUtilisateur . "," . $bd->quote($_POST["Prix"]) . "," . $bd->quote($_POST["Nom"] ) . "," . $bd->quote($_POST["Prenom"]) . ");");
         ?>
     </p>
 

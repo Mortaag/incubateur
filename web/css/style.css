@@ -9,7 +9,7 @@ section {
     width: 100%;
     height: 100vh;
     background-size: cover;
-    background: url(concert_evenement.jpg);
+    background: url('../images/concert_evenement.jpg');
 }
 
 section .leftBox {

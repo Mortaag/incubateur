@@ -27,6 +27,8 @@ else
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>The Tickets</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css"rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="style4.css">
 </head>
@@ -66,7 +68,10 @@ require_once 'navbar.php';
 
   ?>
 <body>
-
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
     <br><br>
     <form action=organisation2.php class="row g-3 container mx-auto" method="post" class="form-label">
     <div class="col-12">
@@ -79,7 +84,7 @@ require_once 'navbar.php';
           
           </div>
           <div class="col-12"><label for="inputAddress" class="form-label">Nombre de places</label>
-            <input type="number" class="form-control" id="inputAddress" placeholder="Description" name="NbPlace">
+            <input type="number" class="form-control" id="inputAddress" name="NbPlaces">
           
     </div>
 
@@ -104,11 +109,11 @@ require_once 'navbar.php';
         </div>
 
         <div class="col-12">
-            <label for="inputAddress" class="form-label">Date</label>
-            <input type="date" class="form-control" id="inputAddress" placeholder="Date de l'évènement" name="Date">
+        <label for="start" class= "form-label">Date : </label>
+        <input type="date" name=Date placeholder="Date de l'évènement">
         </div>
         <div class="col-12">
-            <label for="inputAddress" class="form-label">Prix</label>
+            <label for="inputAddress" class="form-label">Prix des places pour la date</label>
             <input type="price" class="form-control" id="inputAddress" placeholder="€" name="Prix">
         </div>
         <div class="col-12">
@@ -145,6 +150,27 @@ require_once 'navbar.php';
                     <li><a class="text-muted" href="#">Victor Bijot</a></li>
                 </ul>
             </div>
+            <script>
+// ;(function($){
+// $.fn.datepicker.dates['fr'] = {
+// days: ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"],
+// daysShort: ["dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam."],
+// daysMin: ["d", "l", "ma", "me", "j", "v", "s"],
+// months: ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
+// monthsShort: ["janv.", "févr.", "mars", "avril", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."],
+// today: "Aujourd'hui",
+// monthsTitle: "Mois",
+// clear: "Effacer",
+// weekStart: 1,
+// format: "dd/mm/yyyy"
+// };
+// }(jQuery));
 
+// $('.datepicker').datepicker({
+// language: 'fr',
+// autoclose: true,
+// todayHighlight: true
+// })
+</script>
 </body>
 </html>
