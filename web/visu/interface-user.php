@@ -1,14 +1,21 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-    <title>Your event</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="shortcut icon" href="web/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="..\css\style.css" />
-    <meta name="robots" content="noindex" />
+<meta charset="utf-8" lang="fr">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>The Tickets</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css"rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style4.css">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <?php 
+
+    session_start();
+    require_once "equipedev.php";
+    require_once "navbar.php";
+    ?>
     <style type="text/css">
-    body {
+    /* body {
         color: #444444;
         background-color: #EEEEEE;
         font-family: 'Trebuchet MS', sans-serif;
@@ -45,32 +52,31 @@
     }
     #footer a {
         color: #999999;
-    } 
+    }  */
 
     
     </style>
     
 </head>
-<body>
+<body class=text-center>
+
     <div id="page">
         <div id="header" class="header">
             <h1>
-                <a href="..\index.php">
-                    <img src="..\images\logo_the_tickets.png" alt="Logo de The TheTickets" class="logo">
-                </a>
+                
             </h1>
             <h2> Check your account</h2>
         </div>
         <div id="content">
-            <h2><a href="..\index.php"> Home </a></h2>
-            <h3>Cette page est l'interface utilisateur, ou la partie que l'utilisateur pourra accéder une fois la connexion à son compte effectué. </h2>
-            <p>Cette page est produite par le fichier <b>connection.php</b>, présent dans le dossier <b>visu</b>.</p>
-            <p>Cliquez sur le logo pour accéder à l'accueil.</p>
+            <br>
+            <h3>Cette page est l'interface utilisateur de votre compte.</h2>
+            <br>
+            <p>Pour revenir à l'accueil, veuillez cliquez sur le mot <b>"Accueil",</b>dans la barre de navigation</p>
         </div>
         <div id="footer">
-            <p>Powered by <a href="https://www.ispconfig.org">ISPConfig</a></p>
+            <!-- <p>Powered by <a href="https://www.ispconfig.org">ISPConfig</a></p> -->
         </div>
     </div>
-    <a href="deconnexion.php" class="href">Se déconnecter</a>
+    <!-- <a href="deconnexion.php" class="href">Se déconnecter</a> -->
 </body>
 </html>

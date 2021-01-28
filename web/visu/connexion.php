@@ -18,6 +18,7 @@
 <body>
 
 <?php 
+require_once "equipedev.php";
 require_once 'navbar.php';
 
 
